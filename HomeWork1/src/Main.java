@@ -82,9 +82,7 @@ public class Main {
                 stringBuilder.setCharAt(1, stringBuilder.charAt(4));
                 stringBuilder.setCharAt(4, temp);
 
-                int result = Integer.parseInt(stringBuilder.toString());
-
-                System.out.println("Получившееся число: " + result);
+                System.out.println("Получившееся число: " + stringBuilder.toString());
             }
         } catch (Exception e) {
             System.out.println(e.getMessage());
