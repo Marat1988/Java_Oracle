@@ -63,6 +63,7 @@ public class Main {
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
+        scanner.close();
     }
 
     public static void Task4() {
@@ -87,6 +88,7 @@ public class Main {
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
+        scanner.close();
     }
 
     public static void Task5() {
@@ -104,6 +106,7 @@ public class Main {
         } catch (InputMismatchException e) {
             System.out.println(e.getMessage());
         }
+        scanner.close();
     }
 
     public static void Task6() {
@@ -122,6 +125,7 @@ public class Main {
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
+        scanner.close();
     }
 
     public static void Task7() {
@@ -137,6 +141,7 @@ public class Main {
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
+        scanner.close();
     }
 
     public static void Task8() {
@@ -155,6 +160,7 @@ public class Main {
         } catch (Exception ex) {
             System.out.println(ex.getMessage());
         }
+        scanner.close();
     }
 
     public static void Task9() {
@@ -200,6 +206,7 @@ public class Main {
         } catch (Exception ex) {
             System.out.println(ex.getMessage());
         }
+        scanner.close();
     }
 
     public static void Task12() {
@@ -216,5 +223,6 @@ public class Main {
             Arrays.sort(newArray, Collections.reverseOrder());
             System.out.println("Отсортированный массив по убыванию: " + Arrays.toString(newArray));
         }
+        scanner.close();
     }
 }
