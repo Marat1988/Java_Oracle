@@ -26,6 +26,7 @@ public class Main {
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
+        scanner.close();
     }
 
     public static void Task1() {
@@ -47,6 +48,7 @@ public class Main {
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
+        scanner.close();
     }
 
     public static void Task3() {
