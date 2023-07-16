@@ -17,7 +17,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        Person human1 = new Person("Тухтаров М.Р.", new GregorianCalendar(1988, Calendar.JULY, 3), "+79114753483", "Калининград", "Россия", "Куйбышева 11");
+        Person human1 = new Person("Тухтаров М.Р.", new GregorianCalendar(1988, Calendar.JULY, 3), "+7988678657", "Калининград", "Россия", "Куйбышева 11");
         System.out.println(human1);
         System.out.println("***********************************************");
         Person human2 = new Person("Пономарев М.Б.", new GregorianCalendar(1980, Calendar.JANUARY, 1), "+79115678904", "Калининград", "Россия", "Академия ТОП");
