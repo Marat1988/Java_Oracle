@@ -6,6 +6,8 @@ import Task2.Animal;
 import Task2.Crocodile;
 import Task2.Kangaroo;
 import Task2.Tiger;
+import Task3.Money;
+import Task3.Product;
 
 import java.util.Arrays;
 
@@ -24,6 +26,15 @@ public class Main {
                 new Tiger("Тигрюля", "Кошачьих", 60)
         };
         Arrays.stream(animals).forEach(System.out::println);
+        System.out.println("======================================================================");
+        try {
+            Product product = new Product("Мышь компьютерная", new Money(1450, 34));
+            System.out.println(product);
+            product.reducePrice(20,57);
+            System.out.println(product);
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
         System.out.println("======================================================================");
 
     }
