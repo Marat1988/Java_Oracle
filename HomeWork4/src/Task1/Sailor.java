@@ -1,4 +1,4 @@
-package HomeWork1;
+package Task1;
 
 public class Sailor extends Human {
     private int countFlights; //Количество рейсов

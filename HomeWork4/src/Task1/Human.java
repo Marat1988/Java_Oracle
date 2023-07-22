@@ -1,4 +1,4 @@
-package HomeWork1;
+package Task1;
 
 public class Human {
     private int age;

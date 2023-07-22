@@ -1,4 +1,4 @@
-package HomeWork1;
+package Task1;
 
 public class Pilot extends Human {
     private int flightHours; //Всего часов полета
@@ -19,6 +19,6 @@ public class Pilot extends Human {
     @Override
     public String toString() {
         return super.toString() + "\n" +
-                "Всего часов полета: " + flightHours;
+                "Всего часов полета: " + flightHours + "\n";
     }
 }
