@@ -1,4 +1,4 @@
-package Practike1.Task3;
+package Practice1.Task3;
 
 public class User implements Comparable<User> {
     private String name;
@@ -37,15 +37,14 @@ public class User implements Comparable<User> {
 
     @Override
     public String toString() {
-        return "User{" +
-                "name='" + name + '\'' +
-                ", time='" + time + '\'' +
-                ", priority=" + priority +
-                '}';
+        return "Пользователь: " + name + "\n" +
+                "Время: " + time + "\n" +
+                "Приоритет: " + priority;
     }
 
     @Override
     public int compareTo(User o) {
         return this.priority - o.priority;
     }
+
 }

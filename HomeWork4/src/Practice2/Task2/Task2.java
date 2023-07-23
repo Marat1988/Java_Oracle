@@ -1,12 +1,12 @@
-package Practike2.Task2;
+package Practice2.Task2;
 
 public class Task2 {
     public static void main(String[] args) {
         ComparisonNumber max = Math::max;
-        System.out.println(max.comparison(5, 8));
+        System.out.println("Максимальное из двух числе 5 и 8: " + max.comparison(5, 8));
 
         ComparisonNumber min = Math::min;
-        System.out.println(min.comparison(5, 8));
+        System.out.println("Минимальное их двух чисел 5 и 8: " + min.comparison(5, 8));
 
         FactorialNumber factorialNumber = number -> {
             int userNumber = 1;
@@ -15,7 +15,7 @@ public class Task2 {
             }
             return userNumber;
         };
-        System.out.println(factorialNumber.Factorial(5));
+        System.out.println("Факториал числа 5 равно: " + factorialNumber.Factorial(5));
 
         PrimeNumber primeNumber = number -> {
             int count = 0;
@@ -24,13 +24,10 @@ public class Task2 {
                     count++;
                 }
             }
-            if (count > 1) {
-                return false;
-            } else {
-                return true;
-            }
+            return count <= 1;
         };
-        System.out.println(primeNumber.isPrimeNumber(6));
+        System.out.println("Число 5 простое (true) или нет (false): "+ primeNumber.isPrimeNumber(5));
+
 
 
     }

@@ -1,4 +1,4 @@
-package Practike2.Task3;
+package Practice2.Task3;
 
 @FunctionalInterface
 public interface Calc {

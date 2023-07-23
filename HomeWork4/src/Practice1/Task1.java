@@ -1,11 +1,11 @@
-package Practike1;
+package Practice1;
 
 import java.util.*;
 
 public class Task1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Введите набор чисел через запятую (например 1,2,3): ");
+        System.out.print("Введите набор чисел через запятую (например 1,2,3): ");
         String line = scanner.next();
         int[] numbers = Arrays.stream(line.split(",")).mapToInt(Integer::parseInt).toArray();
         ArrayList<Integer> list = new ArrayList<>();
@@ -48,9 +48,9 @@ public class Task1 {
                         }
                         break;
                     case 5:
-                        System.out.println("Введите значение, которое вы хотите заменить: ");
+                        System.out.print("Введите значение, которое вы хотите заменить: ");
                         int userFindForReplaceNumber = scanner.nextInt();
-                        System.out.println("Введите значение, на которое вы хотите заменить: ");
+                        System.out.print("Введите значение, на которое вы хотите заменить: ");
                         int userNewNumber = scanner.nextInt();
                         for (int i = 0; i < list.size(); i++) {
                             if (list.get(i) == userFindForReplaceNumber) {

@@ -1,6 +1,5 @@
-package Practike1;
+package Practice1;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
@@ -10,6 +9,7 @@ public class Task2 {
         Map<String, String> maps = new HashMap<>();
         maps.put("Марат", "1234");
         Scanner scanner = new Scanner(System.in);
+        System.out.println("Список пользователей: " +  maps);
         while (true) {
             System.out.println("Нажмите:\n1. Для добавления нового пользователя;" +
                     "\n2. Для удаления пользователя;" +
@@ -28,13 +28,13 @@ public class Task2 {
                         System.out.print("Введите пароль: ");
                         String newAddPassword = scanner.next();
                         maps.put(newAddLogin, newAddPassword);
+                        System.out.println("Список пользователей: " +  maps);
                         break;
                     case 2:
                         System.out.print("Введите логин пользователя, который вы хотите удалить ");
                         String deleteLogin = scanner.next();
-                        if (maps.containsKey(deleteLogin)) {
-                            maps.remove(deleteLogin);
-                        }
+                        maps.remove(deleteLogin);
+                        System.out.println("Список пользователей: " +  maps);
                         break;
                     case 3:
                         System.out.print("Введите логин пользователя для проверки существования ");
@@ -44,30 +44,40 @@ public class Task2 {
                         } else {
                             System.out.println("Пользователь не найден");
                         }
+                        System.out.println("Список пользователей: " +  maps);;
                         break;
                     case 4:
                         System.out.print("Введите логин пользователя для проверки существования ");
                         String findUser2 = scanner.next();
                         if (maps.containsKey(findUser2)) {
                             String password = maps.get(findUser2);
-                            System.out.println("Введите новый логин пользователя: ");
+                            System.out.print("Введите новый логин пользователя: ");
+                            maps.remove(findUser2);
                             String newLogin = scanner.next();
                             maps.put(newLogin, password);
                         }
+                        else {
+                            System.out.println("Пользователь не найден");
+                        }
+                        System.out.println("Список пользователей: " +  maps);
                         break;
                     case 5:
                         System.out.print("Введите логин пользователя для проверки существования ");
                         String findUser3 = scanner.next();
                         if (maps.containsKey(findUser3)) {
-                            System.out.println("Введите новый пароль пользователя: ");
+                            System.out.print("Введите новый пароль пользователя: ");
                             String password = maps.get(findUser3);
                             String passwordNew = scanner.next();
                             maps.replace(findUser3, password, passwordNew);
                         }
+                        else {
+                            System.out.println("Пользователь не найден");
+                        }
+                        System.out.println("Список пользователей: " +  maps);
                         break;
                 }
             }
         }
-        System.out.println(maps);
+        System.out.println("Список пользователей: " +  maps);
     }
 }

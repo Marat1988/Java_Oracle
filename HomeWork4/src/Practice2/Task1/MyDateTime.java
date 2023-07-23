@@ -1,4 +1,4 @@
-package Practike2.Task1;
+package Practice2.Task1;
 
 @FunctionalInterface
 public interface MyDateTime {

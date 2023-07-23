@@ -1,4 +1,4 @@
-package Practike2.Task1;
+package Practice2.Task1;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
@@ -15,7 +15,6 @@ public class Task1 {
 
         MyDateTime date = () -> System.out.println(LocalDate.now());
         date.getTimeDate();
-
 
     }
 
