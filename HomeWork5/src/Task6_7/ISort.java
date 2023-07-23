@@ -1,4 +1,4 @@
-package Task7_8;
+package Task6_7;
 
 public interface ISort {
     void SortAsc();

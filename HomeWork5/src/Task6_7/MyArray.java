@@ -1,7 +1,6 @@
-package Task7_8;
+package Task6_7;
 
 import java.util.*;
-import java.util.function.IntFunction;
 
 public class MyArray implements IShow, IMath, ISort {
     private int[] arr;

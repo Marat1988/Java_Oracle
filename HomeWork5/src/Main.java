@@ -10,7 +10,7 @@ import Task3.Money;
 import Task3.Product;
 import Task4.*;
 import Task5.*;
-import Task7_8.MyArray;
+import Task6_7.MyArray;
 
 import java.util.Arrays;
 
