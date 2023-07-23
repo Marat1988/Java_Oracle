@@ -1,6 +1,6 @@
 package Practice2.Task3;
 
 @FunctionalInterface
-public interface Calc {
-    int comparingNumbers(int a, int b, int c);
+public interface Calc<T> {
+    T comparingNumbers(T a, T b, T c);
 }
