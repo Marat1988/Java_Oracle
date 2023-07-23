@@ -8,8 +8,11 @@ import Task2.Kangaroo;
 import Task2.Tiger;
 import Task3.Money;
 import Task3.Product;
+import Task4.*;
+import Task5.*;
 
 import java.util.Arrays;
+import java.util.function.Consumer;
 
 public class Main {
     public static void main(String[] args) {
@@ -30,12 +33,45 @@ public class Main {
         try {
             Product product = new Product("Мышь компьютерная", new Money(1450, 34));
             System.out.println(product);
-            product.reducePrice(20,57);
+            product.reducePrice(20, 57);
             System.out.println(product);
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
         System.out.println("======================================================================");
+
+        Device[] devices = {
+                new Car("Z4 30i, 2018", "BMW"),
+                new Nuke("Tuvio MG7T20SM1", "Россия"),
+                new Parahod("Елизавета", 300),
+                new Teapot("EK-1702", "Черный")
+
+        };
+        Arrays.stream(devices).forEach(item -> {
+            System.out.println(item);
+            System.out.println("*********************Методы*********************");
+            item.Sound();
+            item.Show();
+            item.Desc();
+            System.out.println();
+        });
+        System.out.println("======================================================================");
+
+        MusicDevice[] musicDevice = {
+                new Trombone("LD-T800/LD-T820", "LADE"),
+                new Ukulele("TUTTI  JR-20 SCH MUSIC ", "Белый"),
+                new Violin("Скрипка Antonio Lavazza VL-32 1/2", 1),
+                new Violoncello("Beginer Genial 2 Nitro Виолончель 1/2, Gliga B-C012", 91265)
+        };
+        Arrays.stream(musicDevice).forEach(item -> {
+            System.out.println(item);
+            System.out.println("*********************Методы*********************");
+            item.Sound();
+            item.Show();
+            item.Desc();
+            item.History();
+            System.out.println();
+        });
 
     }
 }
