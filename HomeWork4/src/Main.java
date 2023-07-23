@@ -10,9 +10,9 @@ import Task3.Money;
 import Task3.Product;
 import Task4.*;
 import Task5.*;
+import Task7_8.MyArray;
 
 import java.util.Arrays;
-import java.util.function.Consumer;
 
 public class Main {
     public static void main(String[] args) {
@@ -72,6 +72,14 @@ public class Main {
             item.History();
             System.out.println();
         });
+        System.out.println("======================================================================");
+
+        MyArray arr = new MyArray(new int[]{1, 3, 7, 8, 2, 4, 7, 8, 5, 4});
+        System.out.println("Исходный массив: ");
+        arr.Print();
+        System.out.println("Максимальное значение массива равно: " + arr.Max());
+        System.out.println("Минимальное значение массива равно: " + arr.Min());
+        System.out.println("Среднее арифметическое знаначение массива равно: " + arr.Avg());
 
     }
 }
