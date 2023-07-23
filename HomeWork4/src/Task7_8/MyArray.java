@@ -1,10 +1,9 @@
 package Task7_8;
 
-import java.util.Arrays;
-import java.util.OptionalDouble;
-import java.util.OptionalInt;
+import java.util.*;
+import java.util.function.IntFunction;
 
-public class MyArray implements IShow, IMath {
+public class MyArray implements IShow, IMath, ISort {
     private int[] arr;
 
     public MyArray(int[] arr) {
@@ -48,5 +47,20 @@ public class MyArray implements IShow, IMath {
             return (float) avg.getAsDouble();
         }
         return 0;
+    }
+
+    @Override
+    public void SortAsc() {
+        Arrays.sort(arr);
+    }
+
+    @Override
+    public void SortDesc() {
+        int[] sortedDesc = Arrays.stream(arr)
+                .boxed()
+                .sorted(Collections.reverseOrder())
+                .mapToInt(Integer::intValue)
+                .toArray();
+        System.arraycopy(sortedDesc, 0, arr, 0, sortedDesc.length);
     }
 }

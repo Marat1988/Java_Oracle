@@ -80,6 +80,12 @@ public class Main {
         System.out.println("Максимальное значение массива равно: " + arr.Max());
         System.out.println("Минимальное значение массива равно: " + arr.Min());
         System.out.println("Среднее арифметическое знаначение массива равно: " + arr.Avg());
+        System.out.print("Сортировка массива по возрастанию: ");
+        arr.SortAsc();
+        arr.Print();
+        System.out.print("Сортировка масива по убыванию: ");
+        arr.SortDesc();
+        arr.Print();
 
     }
 }
