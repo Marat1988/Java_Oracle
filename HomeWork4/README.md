@@ -1,3 +1,5 @@
+https://github.com/Marat1988/Java_Oracle/blob/main/HomeWork4/README.md# <b>Решение практических заданий 22.07.23</b>
+
 # <b>Practice 1. Home work4</b>
 
 Задание 1.<br>
