@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -19,7 +22,19 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="65236d39-9f9a-4c17-8ea6-576357d7a4e7" name="Default Changelist" comment="testf" />
+    <list default="true" id="65236d39-9f9a-4c17-8ea6-576357d7a4e7" name="Default Changelist" comment="testf">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HomeWork7/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HomeWork7/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HomeWork7/Task1/MyBinaryOperator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HomeWork7/Task1/MyBinaryOperator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HomeWork7/Task1/Task1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HomeWork7/Task1/Task1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HomeWork7/Task1/UserDate.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HomeWork7/Task1/UserDate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HomeWork7/Task2/Fraction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HomeWork7/Task2/Fraction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HomeWork7/Task2/Task2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HomeWork7/Task2/Task2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HomeWork7/Task3/MyPredicate.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HomeWork7/Task3/MyPredicate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HomeWork7/Task3/Task3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HomeWork7/Task3/Task3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HomeWork7/Task4/Task4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HomeWork7/Task4/Task4.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,18 +51,25 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="2T0pLsZTGoApUJpSoVfqwWSVHyi" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/HP/Documents/GitHub/Java_Oracle/HomeWork7&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  }
+}</component>
   <component name="RunManager" selected="Application.Task4">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
@@ -111,9 +133,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Task4" />
-        <item itemvalue="Application.Task1" />
         <item itemvalue="Application.Task3" />
         <item itemvalue="Application.Task2" />
+        <item itemvalue="Application.Task1" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -139,52 +161,5 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="574" y="119" key="#com.intellij.ide.util.MemberChooser" timestamp="1690199105930">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="574" y="119" key="#com.intellij.ide.util.MemberChooser/-1366.0.1093.574/0.0.1536.824@0.0.1536.824" timestamp="1690199105930" />
-    <state width="432" height="444" key="DebuggerActiveHint" timestamp="1690193826810">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="432" height="444" key="DebuggerActiveHint/-1366.0.1093.574/0.0.1536.824@0.0.1536.824" timestamp="1690193826810" />
-    <state width="1493" height="211" key="GridCell.Tab.0.bottom" timestamp="1690204915393">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="211" key="GridCell.Tab.0.bottom/-1366.0.1093.574/0.0.1536.824@0.0.1536.824" timestamp="1690204915393" />
-    <state width="1493" height="211" key="GridCell.Tab.0.center" timestamp="1690204915393">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="211" key="GridCell.Tab.0.center/-1366.0.1093.574/0.0.1536.824@0.0.1536.824" timestamp="1690204915393" />
-    <state width="1493" height="211" key="GridCell.Tab.0.left" timestamp="1690204915393">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="211" key="GridCell.Tab.0.left/-1366.0.1093.574/0.0.1536.824@0.0.1536.824" timestamp="1690204915393" />
-    <state width="1493" height="211" key="GridCell.Tab.0.right" timestamp="1690204915393">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="211" key="GridCell.Tab.0.right/-1366.0.1093.574/0.0.1536.824@0.0.1536.824" timestamp="1690204915393" />
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1690199844553">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom/-1366.0.1093.574/0.0.1536.824@0.0.1536.824" timestamp="1690199844553" />
-    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1690199844553">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.center/-1366.0.1093.574/0.0.1536.824@0.0.1536.824" timestamp="1690199844553" />
-    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1690199844553">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.left/-1366.0.1093.574/0.0.1536.824@0.0.1536.824" timestamp="1690199844553" />
-    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1690199844553">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.right/-1366.0.1093.574/0.0.1536.824@0.0.1536.824" timestamp="1690199844553" />
-    <state x="249" y="0" key="SettingsEditor" timestamp="1690198250462">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="249" y="0" key="SettingsEditor/-1366.0.1093.574/0.0.1536.824@0.0.1536.824" timestamp="1690198250462" />
   </component>
 </project>
