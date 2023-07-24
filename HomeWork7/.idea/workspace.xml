@@ -23,17 +23,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="65236d39-9f9a-4c17-8ea6-576357d7a4e7" name="Default Changelist" comment="testf">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HomeWork7/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HomeWork7/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HomeWork7/Task1/MyBinaryOperator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HomeWork7/Task1/MyBinaryOperator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HomeWork7/Task1/Task1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HomeWork7/Task1/Task1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HomeWork7/Task1/UserDate.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HomeWork7/Task1/UserDate.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HomeWork7/Task2/Fraction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HomeWork7/Task2/Fraction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HomeWork7/Task2/Task2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HomeWork7/Task2/Task2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HomeWork7/Task3/MyPredicate.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HomeWork7/Task3/MyPredicate.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HomeWork7/Task3/Task3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HomeWork7/Task3/Task3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HomeWork7/Task4/Task4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HomeWork7/Task4/Task4.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +60,7 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.Task4">
+  <component name="RunManager" selected="Application.Task1">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="HomeWork7" />
@@ -132,10 +122,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Task4" />
-        <item itemvalue="Application.Task3" />
-        <item itemvalue="Application.Task2" />
         <item itemvalue="Application.Task1" />
+        <item itemvalue="Application.Task2" />
+        <item itemvalue="Application.Task3" />
+        <item itemvalue="Application.Task4" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
