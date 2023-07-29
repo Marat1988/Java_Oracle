@@ -43,34 +43,6 @@ public class MyDictionary {
             }
         }
         scanner.close();
-//        String searchWord = "Марат";
-//
-//        System.out.println(wordStringHashMap.get(new Word("Марат")));
-//
-//        wordStringHashMap.get(new Word("Марат"));
-//
-//
-//        Optional<Map.Entry<Word, TreeSet<String>>> findWord = wordStringHashMap
-//                .entrySet()
-//                .stream()
-//                .filter(item -> item.getKey().getWord(searchWord))
-//                .findFirst();
-//
-//        if (findWord.isPresent()) {
-//            System.out.println("Найденное значение: " + findWord.get());
-//            TreeSet<String> strings = findWord.get().getValue();
-//            strings.add("Марат");
-//            findWord.get().setValue(strings);
-//        }
-//
-//
-//        wordStringHashMap
-//                .entrySet()
-//                .stream()
-//                .sorted((o2, o1) -> Integer.compare(o1.getKey().getPopularCount(), o2.getKey().getPopularCount()))
-//                .forEach(e -> {
-//                    System.out.println(e.getKey());
-//                });
     }
 
     public static void showMenu() { //Отображение меню
@@ -120,7 +92,7 @@ public class MyDictionary {
                 Optional<Map.Entry<Word, TreeSet<String>>> findWord = wordStringHashMap
                         .entrySet()
                         .stream()
-                        .filter(item -> item.getKey().getWord(userWord)) //Для увеличения счетчика обращений. Считаю, что если вызван метод getWord с передачей параметра, то счетчик обращений в классе увеличивается
+                        .filter(item -> item.getKey().getWord().equals(userWord))
                         .findFirst();
                 Word updateWord = new Word(newUserWord, findWord.get().getKey().getPopularCount());
                 TreeSet<String> translateWords = findWord.get().getValue();
@@ -136,7 +108,7 @@ public class MyDictionary {
         scanner.close();
     }
 
-    public static void deleteWord() {
+    public static void deleteWord() { //Для удаления слова
         Scanner scanner = new Scanner(System.in);
         System.out.print("Введите слово для удаления: ");
         String wordFindUser = scanner.next();
@@ -150,23 +122,10 @@ public class MyDictionary {
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
+        scanner.close();
     }
 
-    //Отображение слов.
-    // long limit - сколько слов нужно отобразить.
-    // boolean orderPopular - сортировать по популярности слов на основе счетчика обращений
-    public static void showWord(long limit, boolean orderPopular) {
-        System.out.println("===================================================================");
-        wordStringHashMap
-                .entrySet()
-                .stream()
-                .sorted((o1, o2) -> Integer.compare(orderPopular ? o2.getKey().getPopularCount() : o1.getKey().getPopularCount(), orderPopular ? o1.getKey().getPopularCount() : o2.getKey().getPopularCount()))
-                .limit(limit)
-                .forEach(item -> System.out.println(item.getKey() + " Переводы: " + item.getValue()));
-        System.out.println("===================================================================");
-    }
-
-    public static void findTranslateWord() {
+    public static void findTranslateWord() { //Для поиска перевода слова
         Scanner scanner = new Scanner(System.in);
         System.out.print("Введите слово для поиска: ");
         String userWord = scanner.next();
@@ -181,5 +140,19 @@ public class MyDictionary {
             System.out.println("Искомое слово в словаре не найдено");
         }
         scanner.close();
+    }
+
+    //Отображение слов.
+    // long limit - сколько слов нужно отобразить.
+    // boolean orderPopular - сортировать по популярности слов на основе счетчика обращений
+    public static void showWord(long limit, boolean orderPopular) {
+        System.out.println("===================================================================");
+        wordStringHashMap
+                .entrySet()
+                .stream()
+                .sorted((o1, o2) -> Integer.compare(orderPopular ? o2.getKey().getPopularCount() : o1.getKey().getPopularCount(), orderPopular ? o1.getKey().getPopularCount() : o2.getKey().getPopularCount()))
+                .limit(limit)
+                .forEach(item -> System.out.println(item.getKey() + " Переводы: " + item.getValue()));
+        System.out.println("===================================================================");
     }
 }
