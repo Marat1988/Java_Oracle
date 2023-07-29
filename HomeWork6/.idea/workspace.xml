@@ -23,8 +23,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="64de0e7e-ae51-41aa-b740-04a30461cfe2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Task3/Task3.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Task2/MyDictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Task2/MyDictionary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HomeWork6/Task2/MyDictionary.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Task2/MyDictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Task2/Task2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HomeWork7/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HomeWork7/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,9 +61,9 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.MyDictionary">
-    <configuration name="MyDictionary" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Task2.MyDictionary" />
+  <component name="RunManager" selected="Application.Task2">
+    <configuration name="Task2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Task2.Task2" />
       <module name="HomeWork6" />
       <extension name="coverage">
         <pattern>
@@ -81,7 +84,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MyDictionary" />
+        <item itemvalue="Application.Task2" />
         <item itemvalue="Application.main" />
       </list>
     </recent_temporary>

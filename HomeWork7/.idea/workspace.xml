@@ -22,7 +22,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="65236d39-9f9a-4c17-8ea6-576357d7a4e7" name="Default Changelist" comment="testf" />
+    <list default="true" id="65236d39-9f9a-4c17-8ea6-576357d7a4e7" name="Default Changelist" comment="testf">
+      <change beforePath="$PROJECT_DIR$/../HomeWork6/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HomeWork6/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HomeWork6/out/production/HomeWork6/Task2/MyDictionary.class" beforeDir="false" afterPath="$PROJECT_DIR$/../HomeWork6/out/production/HomeWork6/Task2/MyDictionary.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HomeWork6/src/Task2/MyDictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HomeWork6/src/Task2/MyDictionary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,7 +63,7 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.Task1">
+  <component name="RunManager" selected="Application.Task2">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="HomeWork7" />
@@ -120,8 +125,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Task1" />
         <item itemvalue="Application.Task2" />
+        <item itemvalue="Application.Task1" />
         <item itemvalue="Application.Task3" />
         <item itemvalue="Application.Task4" />
         <item itemvalue="Application.Main" />
