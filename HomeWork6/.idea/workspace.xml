@@ -23,11 +23,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="64de0e7e-ae51-41aa-b740-04a30461cfe2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Task3/Task3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Task3/Fine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Task3/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Task3/TypeFine.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HomeWork6/Task2/MyDictionary.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Task2/MyDictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Task2/Task2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HomeWork7/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HomeWork7/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Task3/Task3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Task3/Task3.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +37,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -61,13 +62,26 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.Task2">
+  <component name="RunManager" selected="Application.Task3">
     <configuration name="Task2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Task2.Task2" />
       <module name="HomeWork6" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Task2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Task3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Task3.Task3" />
+      <module name="HomeWork6" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Task3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -84,6 +98,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Task3" />
         <item itemvalue="Application.Task2" />
         <item itemvalue="Application.main" />
       </list>
