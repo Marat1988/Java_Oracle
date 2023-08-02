@@ -23,10 +23,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="64de0e7e-ae51-41aa-b740-04a30461cfe2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Task3/Fine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Task3/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Task3/TypeFine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Task3/Fine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Task3/Fine.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Task3/Task3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Task3/Task3.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -125,6 +124,5 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

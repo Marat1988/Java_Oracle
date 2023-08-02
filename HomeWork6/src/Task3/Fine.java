@@ -32,7 +32,6 @@ public class Fine { //Штраф
         this.description = description;
     }
 
-
     public double getAmountFine() {
         return amountFine;
     }
