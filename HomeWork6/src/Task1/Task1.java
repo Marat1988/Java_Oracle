@@ -14,9 +14,25 @@ public class Task1 {
         /*Утреннее время с 8:00 до 12:00 (с 480 минуты по 720 минуты)*/
         /*Дневное время с 12:00 до 17:00 (c 720 минуты по 1020 минуты)*/
         /*Вечернее время с 17:00 до 21:00 (c 1020 минуты по 1260 минуты)*/
-        int[] timeAppearancePassengersStop = {2, 5, 10}; //Массив, хранящий среднее время появления пассажиров на остановке в утреннее, дневное и вечернее время
-        int[] timeAppearanceBoatStop = {10, 20, 30}; //Массив, хранящий среднее время появления катера на остановке в утреннее, дневное и вечернее время
 
+        int[] timeAppearancePassengersStop = new int[3]; //Массив, хранящий среднее время появления пассажиров на остановке в утреннее, дневное и вечернее время
+        int[] timeAppearanceBoatStop =  new int[3]; //Массив, хранящий среднее время появления катера на остановке в утреннее, дневное и вечернее время
+
+        Scanner scannerInputInfo = new Scanner(System.in);
+        /*Ввод данных о пассажирах*/
+        System.out.print("Введите среднее время (в минутах) между появлениями пассажиров на причале в утреннее (с 8:00 до 12:00) время суток: ");
+        timeAppearancePassengersStop[0] = scannerInputInfo.nextInt();
+        System.out.print("Введите среднее время (в минутах) между появлениями пассажиров на причале в дневное (с 12:00 до 17:00) время суток: ");
+        timeAppearancePassengersStop[1] = scannerInputInfo.nextInt();
+        System.out.print("Введите среднее время (в минутах) между появлениями пассажиров на причале в вечернее (с 17:00 до 21:00) время суток: ");
+        timeAppearancePassengersStop[2] = scannerInputInfo.nextInt();
+        /*Ввод данных о катерах*/
+        System.out.print("Введите среднее время (в минутах) между появлениями катеров на причале в утреннее (с 8:00 до 12:00) время суток: ");
+        timeAppearanceBoatStop[0] = scannerInputInfo.nextInt();
+        System.out.print("Введите среднее время (в минутах) между появлениями катеров на причале в дневное (с 12:00 до 17:00) время суток: ");
+        timeAppearanceBoatStop[1] = scannerInputInfo.nextInt();
+        System.out.print("Введите среднее время (в минутах) между появлениями катеров на причале в вечернее (с 17:00 до 21:00) время суток: ");
+        timeAppearanceBoatStop[2] = scannerInputInfo.nextInt();
 
         int currentTime = 480; //480 минут. Это 8 утра.
         int averageTimePassengerStop = timeAppearancePassengersStop[0]; //среднее время появления пассажира на остановке (в минутах)
