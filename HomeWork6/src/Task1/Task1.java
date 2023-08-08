@@ -15,7 +15,7 @@ public class Task1 {
         /*Дневное время с 12:00 до 17:00 (c 720 минуты по 1020 минуты)*/
         /*Вечернее время с 17:00 до 21:00 (c 1020 минуты по 1260 минуты)*/
         int[] timeAppearancePassengersStop = {2, 5, 10}; //Массив, хранящий среднее время появления пассажиров на остановке в утреннее, дневное и вечернее время
-        int[] timeAppearanceBoatStop = {10, 20, 30}; //Массив, хранящий среднее время появления катера на остановке
+        int[] timeAppearanceBoatStop = {10, 20, 30}; //Массив, хранящий среднее время появления катера на остановке в утреннее, дневное и вечернее время
 
 
         int currentTime = 480; //480 минут. Это 8 утра.
@@ -30,6 +30,7 @@ public class Task1 {
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
+            currentTime++;
             if (currentTime >= 720 && currentTime < 1020) {
                 averageTimePassengerStop = timeAppearancePassengersStop[1];
                 averageTimeBoatStop = timeAppearanceBoatStop[1];
@@ -49,7 +50,8 @@ public class Task1 {
             if (currentTime % averageTimeBoatStop == 0) {
                 int countFreePlace = (int) (Math.random() * maxCountPassengerBoat + 1);
                 System.out.println("Внимание. Прибыл катер. Количество свободных мест: " + countFreePlace);
-                System.out.print("Введите тип остановки катера (true - конечная, false - не конечная.). Не правильно ввдененное значение (отличное от true или false) будет считаться, что остатновка не конечная ");
+                System.out.print("Введите тип остановки катера (true - конечная, false - не конечная.).\n" +
+                        "Не правильно введенное значение (отличное от true или false) будет считаться, что остатновка не конечная: ");
                 try {
                     Scanner scanner = new Scanner(System.in);
                     endingStation = scanner.nextBoolean();
@@ -68,7 +70,6 @@ public class Task1 {
                     }
                 }
             }
-            currentTime++;
         }
         Scanner scanner = new Scanner(System.in);
         System.out.print("Введите количество людей, чтобы определить достаточный интервал времени между приходами катеров,\n" +
@@ -78,29 +79,36 @@ public class Task1 {
 
         System.out.println("===========================================================================================================================");
         System.out.println("Определяем среднее время пребывания человека на остановке (в минутах) за целый день.");
+        System.out.println();
         showStatistic1(480, 1260, smelledPassengers);
         System.out.println("***************************************************************************************************************************");
         System.out.println("Определяем среднее время пребывания человека на остановке (в минутах) в утреннее время суток (с 8:00 до 12:00)");
+        System.out.println();
         showStatistic1(480, 720, smelledPassengers);
         System.out.println("***************************************************************************************************************************");
         System.out.println("Определяем среднее время пребывания человека на остановке (в минутах) в дневное время суток (с 12:00 до 17:00)");
+        System.out.println();
         showStatistic1(720, 1020, smelledPassengers);
         System.out.println("***************************************************************************************************************************");
         System.out.println("Определяем среднее время пребывания человека на остановке (в минутах) в вечернее время суток (с 17:00 до 21:00):");
+        System.out.println();
         showStatistic1(1020, 1260, smelledPassengers);
         System.out.println("===========================================================================================================================");
 
-        System.out.println("Определяем достаточный интервал времени между приходами катеров в утреннее\n" + "" +
+        System.out.println("Определяем достаточный интервал времени между приходами катеров в утреннее " +
                 "время суток (с 8:00 до 12:00) для того, чтобы на остановке находилось не более " + chooseUserCountPassenger + " людей одновременно");
-        showStatistic2(480, 720, chooseUserCountPassenger, statisticsCountPassenger, timeAppearancePassengersStop[0]);
+        System.out.println();
+        showStatistic2(480, 720, chooseUserCountPassenger, statisticsCountPassenger, timeAppearanceBoatStop[0]);
         System.out.println("***************************************************************************************************************************");
-        System.out.println("Определяем достаточный интервал времени между приходами катеров в дневное\n" + "" +
+        System.out.println("Определяем достаточный интервал времени между приходами катеров в дневное " +
                 "время суток (с 12:00 до 17:00) для того, чтобы на остановке находилось не более " + chooseUserCountPassenger + " людей одновременно");
-        showStatistic2(720, 1020, chooseUserCountPassenger, statisticsCountPassenger, timeAppearancePassengersStop[1]);
+        System.out.println();
+        showStatistic2(720, 1020, chooseUserCountPassenger, statisticsCountPassenger, timeAppearanceBoatStop[1]);
         System.out.println("***************************************************************************************************************************");
-        System.out.println("Определяем достаточный интервал времени между приходами катеров в вечернее\n" + "" +
+        System.out.println("Определяем достаточный интервал времени между приходами катеров в вечернее " +
                 "время суток (с 17:00 до 21:00) для того, чтобы на остановке находилось не более " + chooseUserCountPassenger + " людей одновременно");
-        showStatistic2(1020, 1260, chooseUserCountPassenger, statisticsCountPassenger, timeAppearancePassengersStop[2]);
+        System.out.println();
+        showStatistic2(1020, 1260, chooseUserCountPassenger, statisticsCountPassenger, timeAppearanceBoatStop[2]);
         System.out.println("===========================================================================================================================");
     }
 
@@ -111,7 +119,7 @@ public class Task1 {
                 .mapToInt(value -> value.getDepartureTimeStop() - value.getArrivalTimeStop())
                 .average();
         if (averagePassengerTime.isPresent()) {
-            System.out.println("Среднее время пребывания человека на остановке (в минутах) составляет " + Math.round(averagePassengerTime.getAsDouble()));
+            System.out.println("Среднее время пребывания человека на остановке (в минутах) составляет: " + Math.round(averagePassengerTime.getAsDouble()));
         }
     }
 
@@ -124,13 +132,13 @@ public class Task1 {
                 .average();
 
         if (averageCountPassenger.isPresent()) {
-            System.out.println("Среднее количество людей на остановке составляет " + Math.round(averageCountPassenger.getAsDouble()) + " при интенсивности пребывания катеря каждые " + timeAppearanceBoatStop + " минут");
+            System.out.println("Среднее количество людей на остановке составляет " + Math.round(averageCountPassenger.getAsDouble()) + " человек при интенсивности пребывания катеря каждые " + timeAppearanceBoatStop + " минут");
 
             if (Math.round(averageCountPassenger.getAsDouble()) < chooseUserCountPassenger) {
-                System.out.println("Текущая интенсивность прихода катера является достаточной для того, чтобы на причале находилось менее " + chooseUserCountPassenger + " людей одновременно");
+                System.out.println("Текущая интенсивность прихода катера в данное время является достаточной для того, чтобы на причале находилось менее " + chooseUserCountPassenger + " людей одновременно");
             } else {
-                int newTimeAppearanceBoatStop = Math.round((timeAppearanceBoatStop * chooseUserCountPassenger) / Math.round(averageCountPassenger.getAsDouble()));
-                System.out.println("Достаточный интервал времени между приходами катеров в утреннее время суток (с 17:00 до 21:00),\n + " +
+                long newTimeAppearanceBoatStop = Math.round((timeAppearanceBoatStop * chooseUserCountPassenger) / averageCountPassenger.getAsDouble());
+                System.out.println("Достаточный интервал времени между приходами катеров, " +
                         "чтобы на остановке находилось не более " + chooseUserCountPassenger + " людей одновременно составляет " + newTimeAppearanceBoatStop + " минут");
             }
         }
