@@ -21,10 +21,10 @@ public class Task2 {
                 array.add(line);
                 line = bufferedReader.readLine();
             }
-            Optional<String> chooseLine =  array.stream()
+            Optional<String> chooseLine = array.stream()
                     .max(Comparator.comparingInt(String::length));
 
-            if (chooseLine.isPresent()){
+            if (chooseLine.isPresent()) {
                 String lineMax = chooseLine.get();
                 System.out.println("Самая длиннас строка: " + lineMax);
                 System.out.println("Размер самой длинной строки равен: " + lineMax.length());

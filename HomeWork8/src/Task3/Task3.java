@@ -27,7 +27,7 @@ public class Task3 {
             System.out.println("Второй массив: ");
             showInfoArray(listSecond);
             System.out.println("===================================================");
-            List<Integer> unionArray = Stream.of(listFirst,listSecond)
+            List<Integer> unionArray = Stream.of(listFirst, listSecond)
                     .flatMap(Collection::stream)
                     .toList();
             System.out.println("Объединенный массив: ");
@@ -38,14 +38,15 @@ public class Task3 {
     }
 
     //Элементы из строки
-    private static List<Integer> elementsFromString(String line){
-        line = line.replaceAll("\\s+"," "); //Удаление лишних пробелов.
+    private static List<Integer> elementsFromString(String line) {
+        line = line.replaceAll("\\s+", " "); //Удаление лишних пробелов.
         return Arrays.stream(line.split(" "))
-                .map((item)->Integer.parseInt(item.trim()))
+                .map((item) -> Integer.parseInt(item.trim()))
                 .toList();
     }
+
     //Отображение информации о массиве (Максимальный элемент, минимальный элемент, сумма элементов массива)
-    private static void showInfoArray(List<Integer> array){
+    private static void showInfoArray(List<Integer> array) {
         System.out.println("Элементы массива");
         array.forEach(System.out::println);
         System.out.println("Сумма элементов массива равна: " + array.stream().reduce(Integer::sum).get());

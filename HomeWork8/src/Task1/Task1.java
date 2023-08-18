@@ -2,6 +2,8 @@ package Task1;
 
 import java.io.*;
 import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
@@ -17,12 +19,13 @@ public class Task1 {
         String[] secondArray = readLineFromFile(pathFile2);
 
         System.out.println("Не совпададающие строки из первого файла: ");
-        printNoneMatchLines(firstArray,secondArray);
+        printNoneMatchLines(firstArray, secondArray);
 
         System.out.println("Не совпададающие строки из второго файла: ");
-        printNoneMatchLines(secondArray,firstArray);
+        printNoneMatchLines(secondArray, firstArray);
 
     }
+
     //Построчное чтение из файла. В результате получаем массив строк
     private static String[] readLineFromFile(String pathFile) {
         ArrayList<String> array = new ArrayList<>();
@@ -37,10 +40,11 @@ public class Task1 {
         }
         return array.toArray(new String[]{});
     }
+
     //Печать не совпадающих строк
-    private static void printNoneMatchLines(String[] firstArray, String[] secondArray){
+    private static void printNoneMatchLines(String[] firstArray, String[] secondArray) {
         Arrays.stream(firstArray)
-                .filter(item-> Arrays.stream(secondArray).noneMatch(item::equals))
+                .filter(item -> Arrays.stream(secondArray).noneMatch(item::equals))
                 .distinct()
                 .forEach(System.out::println);
     }
