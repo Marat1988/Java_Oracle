@@ -46,7 +46,7 @@ public class Task5 {
                 case 5 -> deleteEmployee();
                 default -> System.out.println("Не корректный пункт выбора меню");
             }
-            System.out.print("Выберите пукнт меню: ");
+            System.out.print("Выберите пункт меню: ");
             chooseUserMenuAddEditDeleteEmployee = scanner.nextInt();
         }
         System.out.println("Меню поиска информации по критериям: ");
@@ -83,7 +83,7 @@ public class Task5 {
             } catch (Exception e) {
                 System.out.println(e.getMessage());
             }
-            System.out.print("Выберите пукнт меню: ");
+            System.out.print("Выберите пункт меню: ");
             chooseUserMenuShowInfo = scanner.nextInt();
         }
         saveInformationInFile(allEmployees, allEmployeesFromFile); //Автоматически сохраняем всех сотрудников в файл
