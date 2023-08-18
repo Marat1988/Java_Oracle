@@ -2,12 +2,13 @@ package Task5;
 
 import java.io.*;
 import java.util.*;
+import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
 
 public class Task5 {
     private static final File allEmployeesFromFile = new File("employees.txt"); //по-умолчанию в корне каталога будут храниться все сотрудники
-    private static  Set<Employee> allEmployees = new HashSet<>(); //Для хранения всех сотрудников корпорации
+    private static Set<Employee> allEmployees = new HashSet<>(); //Для хранения всех сотрудников корпорации
     public static Set<Employee> chooseUserEmployees = new HashSet<>(); //Для сохранения выбранных сотрудников пользователя по критерию и записи (при необходимости) информации в файл
 
     public static void main(String[] args) {
@@ -56,11 +57,31 @@ public class Task5 {
                 "4 - Для выхода из меню");
         int chooseUserMenuShowInfo = scanner.nextInt();
         while (chooseUserMenuShowInfo != 4) {
-            switch (chooseUserMenuShowInfo) {
-                case 1 -> searchEmployeeLastName();
-                case 2 -> searchEmployeeAge();
-                case 3 -> searchEmployeeLastNameFirstLetter();
-                default -> System.out.println("Не корректный пункт выбора меню");
+            try {
+                Scanner scannerFind = new Scanner(System.in);
+                switch (chooseUserMenuShowInfo) {
+                    case 1 -> {
+                        System.out.print("Введите фамилию сотрудника: ");
+                        String searchLastName = scannerFind.next();
+                        Predicate<Employee> predicateLastName = (employee -> employee.getLastName().equals(searchLastName));
+                        searchInformation(allEmployees, predicateLastName);
+                    }
+                    case 2 -> {
+                        System.out.print("Введите возраст сотрудника: ");
+                        int searchAge = scannerFind.nextInt();
+                        Predicate<Employee> predicateAge = (employee -> employee.getAge() == searchAge);
+                        searchInformation(allEmployees, predicateAge);
+                    }
+                    case 3 -> {
+                        System.out.print("Введите первую букву фамилии для поиска: ");
+                        String firstLetter = scannerFind.next();
+                        Predicate<Employee> predicateFirstLetter = (employee -> employee.getLastName().startsWith(firstLetter));
+                        searchInformation(allEmployees, predicateFirstLetter);
+                    }
+                    default -> System.out.println("Не корректный пункт выбора меню");
+                }
+            } catch (Exception e) {
+                System.out.println(e.getMessage());
             }
             System.out.print("Выберите пукнт меню: ");
             chooseUserMenuShowInfo = scanner.nextInt();
@@ -143,7 +164,7 @@ public class Task5 {
         }
     }
 
-    private static void deleteEmployee() {
+    private static void deleteEmployee() { //Удаление сотрудника
         Scanner scanner = new Scanner(System.in);
         try {
             System.out.print("Введите персональный код сотрудника: ");
@@ -164,55 +185,12 @@ public class Task5 {
         }
     }
 
-    private static void searchEmployeeLastName() { //Поиск информации по фамилии
-        Scanner scanner = new Scanner(System.in);
+    private static void searchInformation(Set<Employee> employees, Predicate<Employee> predicate) { //Поиск сотрудника по различным критериям
         try {
-            System.out.print("Введите фамилию сотрудника для поиска: ");
-            String findLastName = scanner.next();
-            if (allEmployees.stream().anyMatch(item -> item.getLastName().equals(findLastName))) {
+            if (employees.stream().anyMatch(predicate)) {
                 chooseUserEmployees.clear(); //Удаляю  элементы
-                chooseUserEmployees = allEmployees.stream()
-                        .filter(item -> item.getLastName().equals(findLastName))
-                        .collect(Collectors.toSet()); //И записываю новые
-                System.out.println("Список сотрудников: ");
-                chooseUserEmployees.forEach(System.out::println);
-            } else {
-                System.out.println("Сотрудники по выбраному критерию не были найдены!");
-            }
-        } catch (Exception e) {
-            System.out.println(e.getMessage());
-        }
-    }
-
-    private static void searchEmployeeAge() { //Поиск информации по возрасту
-        Scanner scanner = new Scanner(System.in);
-        try {
-            System.out.print("Введите возраст сотрудника для поиска: ");
-            int findAge = scanner.nextInt();
-            if (allEmployees.stream().anyMatch(item -> item.getAge() == findAge)) {
-                chooseUserEmployees.clear(); //Удаляю  элементы
-                chooseUserEmployees = allEmployees.stream()
-                        .filter(item -> item.getAge() == findAge)
-                        .collect(Collectors.toSet()); //И записываю новые
-                System.out.println("Список сотрудников: ");
-                chooseUserEmployees.forEach(System.out::println);
-            } else {
-                System.out.println("Сотрудники по выбраному критерию не были найдены!");
-            }
-        } catch (Exception e) {
-            System.out.println(e.getMessage());
-        }
-    }
-
-    private static void searchEmployeeLastNameFirstLetter() { //Поиск по первой букве фамилии
-        Scanner scanner = new Scanner(System.in);
-        try {
-            System.out.print("Введите первую букву фамилии для поиска: ");
-            String firstLetter = scanner.next();
-            if (allEmployees.stream().anyMatch(item -> item.getLastName().startsWith(firstLetter))) {
-                chooseUserEmployees.clear(); //Удаляю  элементы
-                chooseUserEmployees = allEmployees.stream()
-                        .filter(item -> item.getLastName().startsWith(firstLetter))
+                chooseUserEmployees = employees.stream()
+                        .filter(predicate)
                         .collect(Collectors.toSet()); //И записываю новые
                 System.out.println("Список сотрудников: ");
                 chooseUserEmployees.forEach(System.out::println);
