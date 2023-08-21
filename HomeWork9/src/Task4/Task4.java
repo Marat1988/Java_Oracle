@@ -8,8 +8,8 @@ import java.nio.file.Files;
 import java.util.*;
 
 public class Task4 {
-    private static final File finalFile = new File("finalFile.txt"); //Итоговый файл, куда буду вставлять текст из другиз файлов
-    private static final File listWords = new File("listWords.txt"); //Файл со список запрещенных слов
+    private static final File finalFile = new File("finalFile.txt"); //Итоговый файл, куда буду вставлять текст из других файлов
+    private static final File listWords = new File("listWords.txt"); //Файл со списоком запрещенных слов
     private static int countFiles = 0; //Количество найденных файлов с искомым словом
     private static long executionTimeFindFile = 0; //Время выполнения поиска нужных файлов (первый поток) в миллисекундах и добавление содержимого в финальный файл
     private static long executionTimeProcessingFile = 0; //Время обработки финального файла (второй поток) в миллисекундах
