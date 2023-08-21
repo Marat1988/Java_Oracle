@@ -46,6 +46,6 @@ public class Task1 {
         System.out.println("Элементы массива: ");
         System.out.println(Arrays.toString(numbers));
         System.out.println("Сумма элементов массива равна: " + sumNumber);
-        System.out.println("Среднее арифметическое эдементов массива равна: " + averageNumber);
+        System.out.println("Среднее арифметическое элементов массива равна: " + averageNumber);
     }
 }
