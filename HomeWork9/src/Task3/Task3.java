@@ -6,7 +6,6 @@ import java.nio.file.Files;
 import java.nio.file.StandardCopyOption;
 import java.util.Scanner;
 
-
 public class Task3 {
     private static int copyCountFolder = 0; //Общее количество скопированных папок
     private static int copyCountFile = 0; //Общее количество скопированных файлов
@@ -53,7 +52,6 @@ public class Task3 {
             }
         }
     }
-
     private static void CopyFolder(File sourceFolder, File destinationFolder) throws IOException {
         File[] files = sourceFolder.listFiles();
         if (files != null) {

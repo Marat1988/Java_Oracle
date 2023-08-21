@@ -9,6 +9,7 @@ import java.nio.file.Paths;
 import java.util.List;
 import java.util.Scanner;
 
+
 public class Task2 {
     private static final int maxCountNumber = 1_000_000; //Максимальное число записанных числе в файл
     private static final File filePrimeNumbers = new File("primeNumber.txt"); //Файл для зранения простых чисел
@@ -91,9 +92,11 @@ public class Task2 {
                 throw new RuntimeException(e);
             }
             System.out.println("Статистика");
+            System.out.println("====================================================================================");
             System.out.println("Время завершения (в миллисекундах) операции заполнения файла числами равно: " + timeCompletionAddNumberInFile);
             System.out.println("Время завершения (в миллисекундах) операции поиска простых чисел из файла и добавление их в новый файл равно: " + timeCompletionFindPrimeNumberAndWriteInFile);
             System.out.println("Время завершения (в миллисекундах) операции подсчета факториала каждого числа и добавления результата в новый файл равно: " + timeCompletionCalcFactorialNumberAndWriteInFile);
+            System.out.println("====================================================================================");
         }
     }
 
