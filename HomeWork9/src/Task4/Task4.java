@@ -40,6 +40,7 @@ public class Task4 {
                                 if (Arrays.asList(line.split(" ")).contains(searchWord)) {
                                     countFiles++;
                                     addLinesInFile(finalFile, true, downloadText); //Если слово найдено, то добавляю (сливаю) содержимое файла в финальный файл
+                                    break;
                                 }
                             }
                         } catch (IOException e) {
