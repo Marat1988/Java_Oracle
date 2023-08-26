@@ -12,7 +12,7 @@ public class Task4 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        projectors.add(new Projector("Lingbo T4max", 2023, 150000, "Китай"));
+        projectors.add(new Projector("Lingbo T4max", Year.now().getValue(), 150000, "Китай"));
         projectors.add(new Projector("Akenori LED-888P", 2020, 125000, "Япония"));
         projectors.add(new Projector("Wanbo Projector X1 PRO", 2019, 80666, "США"));
         projectors.add(new Projector("Sony VPL-VW325ES", 2020, 124000, "Канада"));
@@ -71,7 +71,7 @@ public class Task4 {
                         .forEach(System.out::println);
                 default -> System.out.println("Не корректный ввод");
             }
-            System.out.print("Введите следующий пункт меню или введите 7 для выхода: ");
+            System.out.print("Введите следующий пункт меню или введите 9 для выхода: ");
             inputUser = scanner.nextInt();
         }
     }
