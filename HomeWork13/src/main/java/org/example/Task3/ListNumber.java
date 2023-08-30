@@ -3,10 +3,10 @@ package org.example.Task3;
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class Number {
+public class ListNumber {
     private ArrayList<Integer> numbers;
 
-    public Number(ArrayList<Integer> numbers){
+    public ListNumber(ArrayList<Integer> numbers){
         this.numbers = numbers;
     }
 

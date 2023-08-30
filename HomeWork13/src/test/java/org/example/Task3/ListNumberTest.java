@@ -8,8 +8,8 @@ import java.util.ArrayList;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class NumberTest {
-    Number number;
+class ListNumberTest {
+    ListNumber listNumber;
 
     @BeforeEach
     void setUp() {
@@ -18,35 +18,35 @@ class NumberTest {
         nums.add(12);
         nums.add(5);
         nums.add(8);
-        number = new Number(nums);
+        listNumber = new ListNumber(nums);
     }
 
     @Test
     void getSum() {
         long expected = 34;
-        assertEquals(expected, number.getSum());
+        assertEquals(expected, listNumber.getSum());
     }
 
     @Test
     void getAvg() {
         double expected = 8.5;
-        assertEquals(expected, number.getAvg());
+        assertEquals(expected, listNumber.getAvg());
     }
 
     @Test
     void getMax() {
         int expected = 12;
-        assertEquals(expected, number.getMax());
+        assertEquals(expected, listNumber.getMax());
     }
 
     @Test
     void getMin() {
         int expected = 5;
-        assertEquals(expected, number.getMin());
+        assertEquals(expected, listNumber.getMin());
     }
 
     @AfterEach
     void tearDown() {
-        number = null;
+        listNumber = null;
     }
 }
