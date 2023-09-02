@@ -147,7 +147,7 @@ ALTER TABLE Orders
 ADD CONSTRAINT FK_Orders_EmployeeId FOREIGN KEY (EmployeeId) REFERENCES Employee (EmployeeId);
 
 ALTER TABLE LineOrder
-ADD CONSTRAINT FK_LineOrder_OrderId FOREIGN KEY (OrderId) REFERENCES Orders (OrderId);
+ADD CONSTRAINT FK_LineOrder_OrderId FOREIGN KEY (OrderId) REFERENCES Orders (OrderId) ON DELETE CASCADE;
 
 ALTER TABLE LineOrder
 ADD CONSTRAINT FK_LineOrder_ProductId FOREIGN KEY (ProductId) REFERENCES Product(ProductId);
