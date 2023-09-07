@@ -71,7 +71,7 @@
        <td><%= JspHelper.guessDisplayLocaleFromSession(currentSession) %></td>
      </tr>
      <tr>
-       <th>Guessed User</th>
+       <th>Guessed Userfg</th>
        <td><%= JspHelper.guessDisplayUserFromSession(currentSession) %></td>
      </tr>
      <tr>

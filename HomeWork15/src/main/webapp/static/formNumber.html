@@ -8,10 +8,10 @@
     <title>Ввод числа</title>
 </head>
 <body>
-<form method="get">
-
+<form name="userForm" action="/task2" method="get">
+    <label for="userNumber">Введите число:</label>
+    <input type="number" id="userNumber" name="number" placeholder="Введите число" required min="1" max="10" value="1"/>
+    <input type="submit" value="Отправить"/>
 </form>
-
-
 </body>
 </html>

@@ -1,4 +1,4 @@
-package delphi.com;
+package delphi.com.MyServlets;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;

@@ -246,7 +246,7 @@ In CATALINA_BASE:
            * tomcat-juli.jar
 
           The setenv scripts were described above. The tomcat-juli library
-          is documented in the Logging chapter in the User Guide.
+          is documented in the Logging chapter in the Userfg Guide.
 
  * conf - Server configuration files (including server.xml)
 
@@ -283,7 +283,7 @@ CATALINA_BASE/lib.
 
 In general it is advised to never share libraries between web applications,
 but put them into WEB-INF/lib directories inside the applications. See
-Classloading documentation in the User Guide for details.
+Classloading documentation in the Userfg Guide for details.
 
 
 It might be useful to note that the values of CATALINA_HOME and
@@ -309,7 +309,7 @@ The file will look like the following:
     <Manager sessionAttributeValueClassNameFilter="java\.lang\.(?:Boolean|Integer|Long|Number|String)|org\.apache\.catalina\.filters\.CsrfPreventionFilter\$LruCache(?:\$1)?|java\.util\.(?:Linked)?HashMap"/>
   </Context>
 
-See Deployer chapter in User Guide and Context and Host chapters in the
+See Deployer chapter in Userfg Guide and Context and Host chapters in the
 Configuration Reference for more information on contexts and web
 application deployment.
 
@@ -385,7 +385,7 @@ For further reading:
 
  - Apache Tomcat documentation
 
-    * Documentation for APR/Native library in the Tomcat User's Guide
+    * Documentation for APR/Native library in the Tomcat Userfg's Guide
 
       https://tomcat.apache.org/tomcat-10.1-doc/apr.html
 

@@ -14,7 +14,8 @@
 <div class="container">
     <div class="item task_1"><a href="task1">Задание1</a></div>
     <div class="item task_2"><a href="static/formNumber.html">Задание2</a></div>
-    <div class="item task_3"><a href="#">Задание3</a></div>
+    <div class="item task_3"><a href="static/formGuessNumber.html">Задание3</a></div>
+    <div class="item task_4_7"><a href="static/formProfile.html">Задания4-7</a></div>
 </div>
 </body>
 </html>
