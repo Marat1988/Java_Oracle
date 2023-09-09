@@ -120,10 +120,21 @@ CREATE TABLE Schedule --Таблица расписания работы коф�
 (
     ScheduleDate DATE NOT NULL, --Дата. Первичный ключ
     TimeBegin INTERVAL DAY (0) TO SECOND (0) NOT NULL, --Время начала работы
-    TimeEnd INTERVAL DAY (0) TO SECOND (0) NOT NULL, --Время окончания рабо
+    TimeEnd INTERVAL DAY (0) TO SECOND (0) NOT NULL, --Время окончания работ
     CONSTRAINT PK_Schedule_ScheduleDate PRIMARY KEY (ScheduleDate),
     CONSTRAINT CK_Schedule CHECK (TimeBegin<TimeEnd)
 );
+
+CREATE TABLE ScheduleEmployee --Таблица расписания работы сотрудников
+(
+    SheduleDate DATE NOT NULL, --Дата
+    EmployeeId INT NOT NULL, --Связь с таблицоый сотрудников
+    TimeBegin INTERVAL DAY (0) TO SECOND (0) NOT NULL, --Время начала работы
+    TimeEnd INTERVAL DAY (0) TO SECOND (0) NOT NULL, --Время окончания работ
+    CONSTRAINT PK_ScheduleEmployee_SheduleDateEmployeeId PRIMARY KEY (SheduleDate, EmployeeId),
+    CONSTRAINT CK_ScheduleEmployee CHECK (TimeBegin<TimeEnd)
+);
+
 
 /*Этап 2. Создание связей между таблицами*/
 ALTER TABLE SubGroupProduct
@@ -155,6 +166,9 @@ ADD CONSTRAINT FK_LineOrder_ProductId FOREIGN KEY (ProductId) REFERENCES Product
 
 ALTER TABLE LineOrder
 ADD CONSTRAINT FK_LineOrder_EmployeeId FOREIGN KEY (EmployeeId) REFERENCES Employee(EmployeeId);
+
+ALTER TABLE ScheduleEmployee
+ADD CONSTRAINT FK_ScheduleEmployee_EmployeeId FOREIGN KEY (EmployeeId) REFERENCES Employee(EmployeeId);
 
 
 /*Этап 3. Заполнение таблиц тестовыми данными*/
@@ -260,3 +274,14 @@ FROM Dual;
 /*Добавление информации о новом виде кофе*/
 INSERT INTO TypeProduct (NameRus, NameEng, SubGroupId, Price)
 VALUES ('Холодные кофейные напитки', 'Cold coffee drinks', 1, 49.56);
+
+/*Добавление информации о расписаниии работы сотрудников*/
+INSERT ALL
+INTO ScheduleEmployee (ScheduleDate, EmployeeId, TimeBegin, TimeEnd) VALUES (TO_DATE('09.09.2023', 'dd.mm.yyyy'), 1, '0 8:00:00', '0 18:10:00')
+INTO ScheduleEmployee (ScheduleDate, EmployeeId, TimeBegin, TimeEnd) VALUES (NEXT_DAY(CURRENT_DATE, 'Понедельник'), 1, '0 8:00:00', '0 18:10:00')
+INTO ScheduleEmployee (ScheduleDate, EmployeeId, TimeBegin, TimeEnd) VALUES (NEXT_DAY(CURRENT_DATE, 'Вторник'), 1, '0 8:00:00', '0 18:10:00')
+INTO ScheduleEmployee (ScheduleDate, EmployeeId, TimeBegin, TimeEnd) VALUES (NEXT_DAY(CURRENT_DATE, 'Среда'), 1, '0 8:00:00', '0 18:10:00')
+INTO ScheduleEmployee (ScheduleDate, EmployeeId, TimeBegin, TimeEnd) VALUES (NEXT_DAY(CURRENT_DATE, 'Четверг'), 2, '0 8:00:00', '0 18:10:00')
+INTO ScheduleEmployee (ScheduleDate, EmployeeId, TimeBegin, TimeEnd) VALUES (NEXT_DAY(CURRENT_DATE, 'Пятница'), 3, '0 8:00:00', '0 18:10:00')
+
+SELECT 1 FROM DUAL;
