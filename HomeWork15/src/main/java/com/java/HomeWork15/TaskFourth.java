@@ -28,6 +28,7 @@ public class TaskFourth extends HttpServlet {
         String middleName = req.getParameter("middlename");
         String email = req.getParameter("email");
         String telNumber = req.getParameter("phone");
+        String gender = req.getParameter("gender");
         int age = Integer.parseInt(req.getParameter("age"));
         boolean mailing = req.getParameter("mailing") != null;
         PrintWriter printWriter = resp.getWriter();
@@ -38,6 +39,7 @@ public class TaskFourth extends HttpServlet {
         printWriter.write("<p><b>Номер телефона: </b>" + telNumber + "</p>");
         printWriter.write("<p><b>Эл. почта: </b>" + email + "</p>");
         printWriter.write("<p><b>Возраст: </b>" + age + "</p>");
+        printWriter.write("<p><b>Пол: </b>" + gender + "</p>");
         printWriter.write("<p><b>Подписка на рассылку: </b>" + ((mailing) ? "Да" : "Нет") + "</p>");
         printWriter.print("<div><a href='javascript:history.back();'>Назад</a></div>");
         printWriter.close();
