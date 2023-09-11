@@ -127,11 +127,11 @@ CREATE TABLE Schedule --Таблица расписания работы коф�
 
 CREATE TABLE ScheduleEmployee --Таблица расписания работы сотрудников
 (
-    SheduleDate DATE NOT NULL, --Дата
+    ScheduleDate DATE NOT NULL, --Дата
     EmployeeId INT NOT NULL, --Связь с таблицоый сотрудников
     TimeBegin INTERVAL DAY (0) TO SECOND (0) NOT NULL, --Время начала работы
     TimeEnd INTERVAL DAY (0) TO SECOND (0) NOT NULL, --Время окончания работ
-    CONSTRAINT PK_ScheduleEmployee_SheduleDateEmployeeId PRIMARY KEY (SheduleDate, EmployeeId),
+    CONSTRAINT PK_ScheduleEmployee_SheduleDateEmployeeId PRIMARY KEY (ScheduleDate, EmployeeId),
     CONSTRAINT CK_ScheduleEmployee CHECK (TimeBegin<TimeEnd)
 );
 
