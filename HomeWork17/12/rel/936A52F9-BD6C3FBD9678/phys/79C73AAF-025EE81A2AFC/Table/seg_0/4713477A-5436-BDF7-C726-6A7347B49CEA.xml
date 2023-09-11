@@ -1,0 +1,113 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="TYPEPRODUCT" directorySegmentName="seg_0" id="4713477A-5436-BDF7-C726-6A7347B49CEA">
+<createdBy>HP</createdBy>
+<createdTime>2023-09-11 20:35:58 UTC</createdTime>
+<ownerDesignName>12</ownerDesignName>
+<schemaObject>13AEE5ED-4E85-1E06-5175-D9B85DEAE7B7</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>6EB0BE56-C559-BE1C-C801-47757E1CAB71</segment>
+<tableSpace>DEEAE687-56F6-164E-2B2B-61A63E382DA7</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="NAMERUS" id="1B3026D5-3427-7896-4CE8-3B0EB0ACAF11">
+<createdBy>HP</createdBy>
+<createdTime>2023-09-11 20:35:58 UTC</createdTime>
+<ownerDesignName>12</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SUBGROUPID" id="4417A4E6-5BB2-5519-D170-19E62715AD23">
+<createdBy>HP</createdBy>
+<createdTime>2023-09-11 20:35:58 UTC</createdTime>
+<ownerDesignName>12</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PRICE" id="4CAD4862-B1FB-6BA5-2920-4335630EE75E">
+<createdBy>HP</createdBy>
+<createdTime>2023-09-11 20:35:58 UTC</createdTime>
+<ownerDesignName>12</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TYPEID" id="ACAA56E8-3123-353C-6C4E-3429BB747D0A">
+<createdBy>HP</createdBy>
+<createdTime>2023-09-11 20:35:58 UTC</createdTime>
+<ownerDesignName>12</ownerDesignName>
+<autoIncrementDDL>IDENTITY_CLAUSE</autoIncrementDDL>
+</ColumnProxy>
+<ColumnProxy name="NAMEENG" id="EA3EABD5-104C-0FAC-B379-2D47A882C661">
+<createdBy>HP</createdBy>
+<createdTime>2023-09-11 20:35:58 UTC</createdTime>
+<ownerDesignName>12</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PK_TYPEPRODUCT_TYPEID" id="924559EF-7608-FAD3-109D-3E9C770E7F79">
+<createdBy>HP</createdBy>
+<createdTime>2023-09-11 20:35:58 UTC</createdTime>
+<ownerDesignName>12</ownerDesignName>
+<schemaObject>13AEE5ED-4E85-1E06-5175-D9B85DEAE7B7</schemaObject>
+<segment>595D8FDD-A07C-5574-839B-320C51AA9901</segment>
+<tableSpace>DEEAE687-56F6-164E-2B2B-61A63E382DA7</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="UQ_TYPEPRODUCT_NAMERUS" id="AA3B515C-C6EB-6C59-9365-201957EE43AE">
+<createdBy>HP</createdBy>
+<createdTime>2023-09-11 20:35:58 UTC</createdTime>
+<ownerDesignName>12</ownerDesignName>
+<schemaObject>13AEE5ED-4E85-1E06-5175-D9B85DEAE7B7</schemaObject>
+<segment>595D8FDD-A07C-5574-839B-320C51AA9901</segment>
+<tableSpace>DEEAE687-56F6-164E-2B2B-61A63E382DA7</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="UQ_TYPEPRODUCT_NAMEENG" id="B5E180CE-DFF2-9F54-F6CD-6E43F610D334">
+<createdBy>HP</createdBy>
+<createdTime>2023-09-11 20:35:58 UTC</createdTime>
+<ownerDesignName>12</ownerDesignName>
+<schemaObject>13AEE5ED-4E85-1E06-5175-D9B85DEAE7B7</schemaObject>
+<segment>595D8FDD-A07C-5574-839B-320C51AA9901</segment>
+<tableSpace>DEEAE687-56F6-164E-2B2B-61A63E382DA7</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_TYPEPRODUCT_SUBGROUPID" id="8F9FCA22-3DF3-54EE-A7CA-B86DFA9D0753">
+<createdBy>HP</createdBy>
+<createdTime>2023-09-11 20:35:58 UTC</createdTime>
+<ownerDesignName>12</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_TYPEPRODUCT_TYPEID" id="7C3D61F2-22E1-3926-96B9-135068B2A4D5">
+<createdBy>HP</createdBy>
+<createdTime>2023-09-11 20:35:58 UTC</createdTime>
+<ownerDesignName>12</ownerDesignName>
+<segment>595D8FDD-A07C-5574-839B-320C51AA9901</segment>
+<tableSpace>DEEAE687-56F6-164E-2B2B-61A63E382DA7</tableSpace>
+<existingIndex>924559EF-7608-FAD3-109D-3E9C770E7F79</existingIndex>
+<indexSegment>595D8FDD-A07C-5574-839B-320C51AA9901</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="UQ_TYPEPRODUCT_NAMEENG" id="A71F173E-E3E1-64B3-B0DB-BF320876B2E0">
+<createdBy>HP</createdBy>
+<createdTime>2023-09-11 20:35:58 UTC</createdTime>
+<ownerDesignName>12</ownerDesignName>
+<segment>595D8FDD-A07C-5574-839B-320C51AA9901</segment>
+<tableSpace>DEEAE687-56F6-164E-2B2B-61A63E382DA7</tableSpace>
+<existingIndex>B5E180CE-DFF2-9F54-F6CD-6E43F610D334</existingIndex>
+<indexSegment>595D8FDD-A07C-5574-839B-320C51AA9901</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</UniqueKey>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="UQ_TYPEPRODUCT_NAMERUS" id="DC9941C1-AC1A-09BC-5543-5B406A14D781">
+<createdBy>HP</createdBy>
+<createdTime>2023-09-11 20:35:58 UTC</createdTime>
+<ownerDesignName>12</ownerDesignName>
+<segment>595D8FDD-A07C-5574-839B-320C51AA9901</segment>
+<tableSpace>DEEAE687-56F6-164E-2B2B-61A63E382DA7</tableSpace>
+<existingIndex>AA3B515C-C6EB-6C59-9365-201957EE43AE</existingIndex>
+<indexSegment>595D8FDD-A07C-5574-839B-320C51AA9901</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev12c>

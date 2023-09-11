@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="COFFEHOUSE" directorySegmentName="seg_0" id="D96AFC4B-05C9-92BD-9A56-F9354E31EABF">
+<createdBy>HP</createdBy>
+<createdTime>2023-09-11 20:32:58 UTC</createdTime>
+<ownerDesignName>12</ownerDesignName>
+<schemaObject>13AEE5ED-4E85-1E06-5175-D9B85DEAE7B7</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>6EB0BE56-C559-BE1C-C801-47757E1CAB71</segment>
+<tableSpace>DEEAE687-56F6-164E-2B2B-61A63E382DA7</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="COFFEHOUSEID" id="06FCCF74-D7C1-CFC6-792A-67D8726B0CBB">
+<createdBy>HP</createdBy>
+<createdTime>2023-09-11 20:32:58 UTC</createdTime>
+<ownerDesignName>12</ownerDesignName>
+<autoIncrementDDL>IDENTITY_CLAUSE</autoIncrementDDL>
+</ColumnProxy>
+<ColumnProxy name="NAME" id="99BE4357-1FEB-AF04-B9A2-AB01FB03ABD0">
+<createdBy>HP</createdBy>
+<createdTime>2023-09-11 20:32:58 UTC</createdTime>
+<ownerDesignName>12</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="UQ_COFFEHOUSE_NAME" id="0E84C353-CBAC-07CE-3384-32A89565A3FB">
+<createdBy>HP</createdBy>
+<createdTime>2023-09-11 20:32:58 UTC</createdTime>
+<ownerDesignName>12</ownerDesignName>
+<schemaObject>13AEE5ED-4E85-1E06-5175-D9B85DEAE7B7</schemaObject>
+<segment>595D8FDD-A07C-5574-839B-320C51AA9901</segment>
+<tableSpace>DEEAE687-56F6-164E-2B2B-61A63E382DA7</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PK_COFFEHOUSE_COFFEHOUSEID" id="13988EEC-4CFE-A8F1-E595-AD9418712F54">
+<createdBy>HP</createdBy>
+<createdTime>2023-09-11 20:32:58 UTC</createdTime>
+<ownerDesignName>12</ownerDesignName>
+<schemaObject>13AEE5ED-4E85-1E06-5175-D9B85DEAE7B7</schemaObject>
+<segment>595D8FDD-A07C-5574-839B-320C51AA9901</segment>
+<tableSpace>DEEAE687-56F6-164E-2B2B-61A63E382DA7</tableSpace>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_COFFEHOUSE_COFFEHOUSEID" id="B6FB1785-CD95-FCC1-F81D-2817FD7905A8">
+<createdBy>HP</createdBy>
+<createdTime>2023-09-11 20:32:58 UTC</createdTime>
+<ownerDesignName>12</ownerDesignName>
+<segment>595D8FDD-A07C-5574-839B-320C51AA9901</segment>
+<tableSpace>DEEAE687-56F6-164E-2B2B-61A63E382DA7</tableSpace>
+<existingIndex>13988EEC-4CFE-A8F1-E595-AD9418712F54</existingIndex>
+<indexSegment>595D8FDD-A07C-5574-839B-320C51AA9901</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="UQ_COFFEHOUSE_NAME" id="D081BFAB-E44E-A2A1-6D74-A0E97EE056D7">
+<createdBy>HP</createdBy>
+<createdTime>2023-09-11 20:32:58 UTC</createdTime>
+<ownerDesignName>12</ownerDesignName>
+<segment>595D8FDD-A07C-5574-839B-320C51AA9901</segment>
+<tableSpace>DEEAE687-56F6-164E-2B2B-61A63E382DA7</tableSpace>
+<existingIndex>0E84C353-CBAC-07CE-3384-32A89565A3FB</existingIndex>
+<indexSegment>595D8FDD-A07C-5574-839B-320C51AA9901</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev12c>

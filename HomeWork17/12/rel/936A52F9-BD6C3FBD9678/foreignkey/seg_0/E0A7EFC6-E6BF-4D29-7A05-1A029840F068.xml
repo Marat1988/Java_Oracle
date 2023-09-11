@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="E0A7EFC6-E6BF-4D29-7A05-1A029840F068" containerWithKeyObject="14AC9EEB-3DD8-108E-EF20-F4C38F3F19C6" localFKIndex="D8787FAE-4370-02C5-ADE6-A51AB15DAC24" name="FK_SCHEDULE_COFFEHOUSEID">
+<sourceConnName>CoffeHouse</sourceConnName>
+<sourceObjSchema>SYS</sourceObjSchema>
+<sourceObjName>FK_SCHEDULE_COFFEHOUSEID</sourceObjName>
+<createdBy>HP</createdBy>
+<createdTime>2023-09-11 20:33:23 UTC</createdTime>
+<ownerDesignName>12</ownerDesignName>
+<referredTableLongName>SYS.COFFEHOUSE</referredTableLongName>
+<deleteRule>CASCADE</deleteRule>
+<referredTableID>D96AFC4B-05C9-92BD-9A56-F9354E31EABF</referredTableID>
+<keyObject>13988EEC-4CFE-A8F1-E595-AD9418712F54</keyObject>
+<referredKeyID>13988EEC-4CFE-A8F1-E595-AD9418712F54</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>COFFEHOUSEID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

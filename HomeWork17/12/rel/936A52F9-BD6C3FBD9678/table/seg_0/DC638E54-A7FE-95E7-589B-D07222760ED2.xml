@@ -1,0 +1,227 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DC638E54-A7FE-95E7-589B-D07222760ED2" schemaObject="13AEE5ED-4E85-1E06-5175-D9B85DEAE7B7" name="LINEORDER">
+<sourceConnName>CoffeHouse</sourceConnName>
+<sourceObjSchema>SYS</sourceObjSchema>
+<sourceObjName>LINEORDER</sourceObjName>
+<createdBy>HP</createdBy>
+<createdTime>2023-09-11 20:33:56 UTC</createdTime>
+<ownerDesignName>12</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="LINEORDERID" id="BACFF682-433E-D9BA-6676-10CF53E2FE53">
+<sourceConnName>CoffeHouse</sourceConnName>
+<sourceObjSchema>LINEORDER</sourceObjSchema>
+<sourceObjName>LINEORDERID</sourceObjName>
+<createdBy>HP</createdBy>
+<createdTime>2023-09-11 20:33:56 UTC</createdTime>
+<ownerDesignName>12</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementGenerateAlways>true</autoIncrementGenerateAlways>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementDisableCache>false</autoIncrementDisableCache>
+<autoIncrementCache>20</autoIncrementCache>
+<autoIncrementOrder>false</autoIncrementOrder>
+</Column>
+<Column name="ORDERID" id="1913563F-ED4D-7949-7EAE-CBFAA6F8B50A">
+<sourceConnName>CoffeHouse</sourceConnName>
+<sourceObjSchema>LINEORDER</sourceObjSchema>
+<sourceObjName>ORDERID</sourceObjName>
+<createdBy>HP</createdBy>
+<createdTime>2023-09-11 20:33:56 UTC</createdTime>
+<ownerDesignName>12</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="36A66860-4FB6-2086-7980-C612F77C861F" referredColumn="E65A38E6-2DC9-90B6-E64E-C28F723F863C"/>
+</associations>
+</Column>
+<Column name="PRICEPRODUCT" id="F4C32EB8-CAF9-2EA5-A3EB-45E11BA4F31E">
+<sourceConnName>CoffeHouse</sourceConnName>
+<sourceObjSchema>LINEORDER</sourceObjSchema>
+<sourceObjName>PRICEPRODUCT</sourceObjName>
+<createdBy>HP</createdBy>
+<createdTime>2023-09-11 20:33:56 UTC</createdTime>
+<ownerDesignName>12</ownerDesignName>
+<constraintName>CK_LINEORDER_PRICEPRODUCT</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="PriceProduct&gt;0"/>
+<implementationDef dbType="Oracle Database 12cR2" definition="PriceProduct&gt;0"/>
+</checkConstraint>
+<ownDataTypeParameters>,8,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRICECLIENT" id="65CA7EAA-1197-0BD7-1B25-88A57E0495DD">
+<sourceConnName>CoffeHouse</sourceConnName>
+<sourceObjSchema>LINEORDER</sourceObjSchema>
+<sourceObjName>PRICECLIENT</sourceObjName>
+<createdBy>HP</createdBy>
+<createdTime>2023-09-11 20:33:56 UTC</createdTime>
+<ownerDesignName>12</ownerDesignName>
+<constraintName>CK_LINEORDER_PRICECLIENT</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="PriceClient&gt;0"/>
+<implementationDef dbType="Oracle Database 12cR2" definition="PriceClient&gt;0"/>
+</checkConstraint>
+<ownDataTypeParameters>,8,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EMPLOYEEID" id="9D50FB01-4D08-05C0-FB19-29BFBD2F04FE">
+<sourceConnName>CoffeHouse</sourceConnName>
+<sourceObjSchema>LINEORDER</sourceObjSchema>
+<sourceObjName>EMPLOYEEID</sourceObjName>
+<createdBy>HP</createdBy>
+<createdTime>2023-09-11 20:33:56 UTC</createdTime>
+<ownerDesignName>12</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3116952A-145C-832F-A1A7-FDD3F99C529D" referredColumn="B82DBA07-4268-BF01-7C0F-8A387E0E9EC3"/>
+</associations>
+</Column>
+<Column name="PRODUCTID" id="6F8A717D-99A9-25B5-795A-C12D07D5A857">
+<sourceConnName>CoffeHouse</sourceConnName>
+<sourceObjSchema>LINEORDER</sourceObjSchema>
+<sourceObjName>PRODUCTID</sourceObjName>
+<createdBy>HP</createdBy>
+<createdTime>2023-09-11 20:33:56 UTC</createdTime>
+<ownerDesignName>12</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7F9AFE63-5360-9D6C-CAF6-9B2620384AA5" referredColumn="CF1C2B97-E491-17FF-7E1F-77E4BA73C7E1"/>
+</associations>
+</Column>
+<Column name="QUANTITY" id="E8DE9AAC-3C1A-E6F4-1D42-0A559A4D6985">
+<sourceConnName>CoffeHouse</sourceConnName>
+<sourceObjSchema>LINEORDER</sourceObjSchema>
+<sourceObjName>QUANTITY</sourceObjName>
+<createdBy>HP</createdBy>
+<createdTime>2023-09-11 20:33:56 UTC</createdTime>
+<ownerDesignName>12</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AMOUNT" id="6C821853-C201-18CD-4FDA-DE6609FC98E3">
+<sourceConnName>CoffeHouse</sourceConnName>
+<sourceObjSchema>LINEORDER</sourceObjSchema>
+<sourceObjName>AMOUNT</sourceObjName>
+<createdBy>HP</createdBy>
+<createdTime>2023-09-11 20:33:56 UTC</createdTime>
+<ownerDesignName>12</ownerDesignName>
+<constraintName>CK_LINEORDER_AMOUNT</constraintName>
+<formulaDesc>ROUND(&quot;PRICECLIENT&quot;*&quot;QUANTITY&quot;,2)</formulaDesc>
+<nullsAllowed>true</nullsAllowed>
+<sourceType>Derived</sourceType>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="Amount&gt;0"/>
+<implementationDef dbType="Oracle Database 12cR2" definition="Amount&gt;0"/>
+</checkConstraint>
+<ownDataTypeParameters>,8,2</ownDataTypeParameters>
+<computed>true</computed>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1C925226-95CA-FB2D-AF55-AEA3774BA0AA" name="PK_LINEORDER_LINEORDERID">
+<sourceConnName>CoffeHouse</sourceConnName>
+<sourceObjSchema>SYS</sourceObjSchema>
+<sourceObjName>PK_LINEORDER_LINEORDERID</sourceObjName>
+<createdBy>HP</createdBy>
+<createdTime>2023-09-11 20:33:56 UTC</createdTime>
+<ownerDesignName>12</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BACFF682-433E-D9BA-6676-10CF53E2FE53"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="91AEC65E-CA81-8D03-DC76-39E7A9F05056" schemaObject="13AEE5ED-4E85-1E06-5175-D9B85DEAE7B7" name="PK_LINEORDER_LINEORDERID">
+<sourceConnName>CoffeHouse</sourceConnName>
+<sourceObjSchema>SYS</sourceObjSchema>
+<sourceObjName>PK_LINEORDER_LINEORDERID</sourceObjName>
+<createdBy>HP</createdBy>
+<createdTime>2023-09-11 20:33:56 UTC</createdTime>
+<ownerDesignName>12</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BACFF682-433E-D9BA-6676-10CF53E2FE53"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DA7EC671-3D69-5F5A-EAE9-9B589C9B80FF" name="FK_LINEORDER_EMPLOYEEID">
+<createdBy>HP</createdBy>
+<createdTime>2023-09-11 20:33:57 UTC</createdTime>
+<ownerDesignName>12</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9D50FB01-4D08-05C0-FB19-29BFBD2F04FE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="28885241-0841-6C5D-33BF-24E7BF918D85" name="FK_LINEORDER_ORDERID">
+<createdBy>HP</createdBy>
+<createdTime>2023-09-11 20:33:57 UTC</createdTime>
+<ownerDesignName>12</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1913563F-ED4D-7949-7EAE-CBFAA6F8B50A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="23E75175-A976-EB99-51EF-A75D954E3187" name="FK_LINEORDER_PRODUCTID">
+<createdBy>HP</createdBy>
+<createdTime>2023-09-11 20:33:57 UTC</createdTime>
+<ownerDesignName>12</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6F8A717D-99A9-25B5-795A-C12D07D5A857"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

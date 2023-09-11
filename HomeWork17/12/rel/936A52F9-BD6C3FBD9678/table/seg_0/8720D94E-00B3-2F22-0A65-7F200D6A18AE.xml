@@ -1,0 +1,128 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8720D94E-00B3-2F22-0A65-7F200D6A18AE" schemaObject="13AEE5ED-4E85-1E06-5175-D9B85DEAE7B7" name="SCHEDULEEMPLOYEE">
+<sourceConnName>CoffeHouse</sourceConnName>
+<sourceObjSchema>SYS</sourceObjSchema>
+<sourceObjName>SCHEDULEEMPLOYEE</sourceObjName>
+<createdBy>HP</createdBy>
+<createdTime>2023-09-11 20:36:39 UTC</createdTime>
+<ownerDesignName>12</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SCHEDULEDATE" id="C2D614A4-F89B-A2E9-284D-E05DDFB49BB3">
+<sourceConnName>CoffeHouse</sourceConnName>
+<sourceObjSchema>SCHEDULEEMPLOYEE</sourceObjSchema>
+<sourceObjName>SCHEDULEDATE</sourceObjName>
+<createdBy>HP</createdBy>
+<createdTime>2023-09-11 20:36:39 UTC</createdTime>
+<ownerDesignName>12</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EMPLOYEEID" id="47D1B627-E81C-8453-9FB6-F7FD9C9F4F4A">
+<sourceConnName>CoffeHouse</sourceConnName>
+<sourceObjSchema>SCHEDULEEMPLOYEE</sourceObjSchema>
+<sourceObjName>EMPLOYEEID</sourceObjName>
+<createdBy>HP</createdBy>
+<createdTime>2023-09-11 20:36:39 UTC</createdTime>
+<ownerDesignName>12</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B2EB9962-8D3F-009C-7F30-6F091F8B3327" referredColumn="B82DBA07-4268-BF01-7C0F-8A387E0E9EC3"/>
+</associations>
+</Column>
+<Column name="TIMEBEGIN" id="84879E12-E036-0100-9A9E-1342F109C33D">
+<sourceConnName>CoffeHouse</sourceConnName>
+<sourceObjSchema>SCHEDULEEMPLOYEE</sourceObjSchema>
+<sourceObjName>TIMEBEGIN</sourceObjName>
+<createdBy>HP</createdBy>
+<createdTime>2023-09-11 20:36:39 UTC</createdTime>
+<ownerDesignName>12</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT049</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,0,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TIMEEND" id="5A05C82E-A03F-8A8B-6528-D2738B749DDB">
+<sourceConnName>CoffeHouse</sourceConnName>
+<sourceObjSchema>SCHEDULEEMPLOYEE</sourceObjSchema>
+<sourceObjName>TIMEEND</sourceObjName>
+<createdBy>HP</createdBy>
+<createdTime>2023-09-11 20:36:39 UTC</createdTime>
+<ownerDesignName>12</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT049</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,0,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BEA2802A-B2D4-B43E-2593-FFDD76CEEC0A" name="PK_SCHEDULEEMPLOYEE_SHEDULEDATEEMPLOYEEID">
+<sourceConnName>CoffeHouse</sourceConnName>
+<sourceObjSchema>SYS</sourceObjSchema>
+<sourceObjName>PK_SCHEDULEEMPLOYEE_SHEDULEDATEEMPLOYEEID</sourceObjName>
+<createdBy>HP</createdBy>
+<createdTime>2023-09-11 20:36:39 UTC</createdTime>
+<ownerDesignName>12</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C2D614A4-F89B-A2E9-284D-E05DDFB49BB3"/>
+<colUsage columnID="47D1B627-E81C-8453-9FB6-F7FD9C9F4F4A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F4BF0C02-C8D0-6F4E-CCD0-D537146E6E16" schemaObject="13AEE5ED-4E85-1E06-5175-D9B85DEAE7B7" name="PK_SCHEDULEEMPLOYEE_SHEDULEDATEEMPLOYEEID">
+<sourceConnName>CoffeHouse</sourceConnName>
+<sourceObjSchema>SYS</sourceObjSchema>
+<sourceObjName>PK_SCHEDULEEMPLOYEE_SHEDULEDATEEMPLOYEEID</sourceObjName>
+<createdBy>HP</createdBy>
+<createdTime>2023-09-11 20:36:39 UTC</createdTime>
+<ownerDesignName>12</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C2D614A4-F89B-A2E9-284D-E05DDFB49BB3"/>
+<colUsage columnID="47D1B627-E81C-8453-9FB6-F7FD9C9F4F4A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="274125DF-3850-2579-A503-601334208255" name="FK_SCHEDULEEMPLOYEE_EMPLOYEEID">
+<createdBy>HP</createdBy>
+<createdTime>2023-09-11 20:36:39 UTC</createdTime>
+<ownerDesignName>12</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="47D1B627-E81C-8453-9FB6-F7FD9C9F4F4A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="CK_SCHEDULEEMPLOYEE" directorySegmentName="seg_0" id="45B22DD0-B70C-6D2B-D51C-12AFCB5AA01D">
+<sourceConnName>CoffeHouse</sourceConnName>
+<sourceObjSchema>SYS</sourceObjSchema>
+<sourceObjName>CK_SCHEDULEEMPLOYEE</sourceObjName>
+<createdBy>HP</createdBy>
+<createdTime>2023-09-11 20:36:39 UTC</createdTime>
+<ownerDesignName>12</ownerDesignName>
+<rule><![CDATA[TimeBegin<TimeEnd]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

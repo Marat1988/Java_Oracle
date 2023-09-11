@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="1E8F0F2C-513E-F397-3BE0-C2A624677569" containerWithKeyObject="4713477A-5436-BDF7-C726-6A7347B49CEA" localFKIndex="8F9FCA22-3DF3-54EE-A7CA-B86DFA9D0753" name="FK_TYPEPRODUCT_SUBGROUPID">
+<sourceConnName>CoffeHouse</sourceConnName>
+<sourceObjSchema>SYS</sourceObjSchema>
+<sourceObjName>FK_TYPEPRODUCT_SUBGROUPID</sourceObjName>
+<createdBy>HP</createdBy>
+<createdTime>2023-09-11 20:35:58 UTC</createdTime>
+<ownerDesignName>12</ownerDesignName>
+<referredTableLongName>SYS.SUBGROUPPRODUCT</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>57586C81-E14C-0D96-4D0B-831EAD91FF24</referredTableID>
+<keyObject>FB9D9526-3B40-9A11-F42C-3FCE1E888182</keyObject>
+<referredKeyID>FB9D9526-3B40-9A11-F42C-3FCE1E888182</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>SUBGROUPID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

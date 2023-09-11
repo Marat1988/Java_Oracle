@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="LINEORDER" directorySegmentName="seg_0" id="DC638E54-A7FE-95E7-589B-D07222760ED2">
+<createdBy>HP</createdBy>
+<createdTime>2023-09-11 20:33:56 UTC</createdTime>
+<ownerDesignName>12</ownerDesignName>
+<schemaObject>13AEE5ED-4E85-1E06-5175-D9B85DEAE7B7</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>6EB0BE56-C559-BE1C-C801-47757E1CAB71</segment>
+<tableSpace>DEEAE687-56F6-164E-2B2B-61A63E382DA7</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="ORDERID" id="1913563F-ED4D-7949-7EAE-CBFAA6F8B50A">
+<createdBy>HP</createdBy>
+<createdTime>2023-09-11 20:33:56 UTC</createdTime>
+<ownerDesignName>12</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PRICECLIENT" id="65CA7EAA-1197-0BD7-1B25-88A57E0495DD">
+<createdBy>HP</createdBy>
+<createdTime>2023-09-11 20:33:56 UTC</createdTime>
+<ownerDesignName>12</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="AMOUNT" id="6C821853-C201-18CD-4FDA-DE6609FC98E3">
+<createdBy>HP</createdBy>
+<createdTime>2023-09-11 20:33:56 UTC</createdTime>
+<ownerDesignName>12</ownerDesignName>
+<columnExpression>ROUND(&quot;PRICECLIENT&quot;*&quot;QUANTITY&quot;,2)</columnExpression>
+</ColumnProxy>
+<ColumnProxy name="PRODUCTID" id="6F8A717D-99A9-25B5-795A-C12D07D5A857">
+<createdBy>HP</createdBy>
+<createdTime>2023-09-11 20:33:56 UTC</createdTime>
+<ownerDesignName>12</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="EMPLOYEEID" id="9D50FB01-4D08-05C0-FB19-29BFBD2F04FE">
+<createdBy>HP</createdBy>
+<createdTime>2023-09-11 20:33:56 UTC</createdTime>
+<ownerDesignName>12</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="LINEORDERID" id="BACFF682-433E-D9BA-6676-10CF53E2FE53">
+<createdBy>HP</createdBy>
+<createdTime>2023-09-11 20:33:56 UTC</createdTime>
+<ownerDesignName>12</ownerDesignName>
+<autoIncrementDDL>IDENTITY_CLAUSE</autoIncrementDDL>
+</ColumnProxy>
+<ColumnProxy name="QUANTITY" id="E8DE9AAC-3C1A-E6F4-1D42-0A559A4D6985">
+<createdBy>HP</createdBy>
+<createdTime>2023-09-11 20:33:56 UTC</createdTime>
+<ownerDesignName>12</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PRICEPRODUCT" id="F4C32EB8-CAF9-2EA5-A3EB-45E11BA4F31E">
+<createdBy>HP</createdBy>
+<createdTime>2023-09-11 20:33:56 UTC</createdTime>
+<ownerDesignName>12</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PK_LINEORDER_LINEORDERID" id="91AEC65E-CA81-8D03-DC76-39E7A9F05056">
+<createdBy>HP</createdBy>
+<createdTime>2023-09-11 20:33:56 UTC</createdTime>
+<ownerDesignName>12</ownerDesignName>
+<schemaObject>13AEE5ED-4E85-1E06-5175-D9B85DEAE7B7</schemaObject>
+<segment>595D8FDD-A07C-5574-839B-320C51AA9901</segment>
+<tableSpace>DEEAE687-56F6-164E-2B2B-61A63E382DA7</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_LINEORDER_PRODUCTID" id="23E75175-A976-EB99-51EF-A75D954E3187">
+<createdBy>HP</createdBy>
+<createdTime>2023-09-11 20:33:57 UTC</createdTime>
+<ownerDesignName>12</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_LINEORDER_ORDERID" id="28885241-0841-6C5D-33BF-24E7BF918D85">
+<createdBy>HP</createdBy>
+<createdTime>2023-09-11 20:33:57 UTC</createdTime>
+<ownerDesignName>12</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_LINEORDER_EMPLOYEEID" id="DA7EC671-3D69-5F5A-EAE9-9B589C9B80FF">
+<createdBy>HP</createdBy>
+<createdTime>2023-09-11 20:33:57 UTC</createdTime>
+<ownerDesignName>12</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_LINEORDER_LINEORDERID" id="1C925226-95CA-FB2D-AF55-AEA3774BA0AA">
+<createdBy>HP</createdBy>
+<createdTime>2023-09-11 20:33:57 UTC</createdTime>
+<ownerDesignName>12</ownerDesignName>
+<segment>595D8FDD-A07C-5574-839B-320C51AA9901</segment>
+<tableSpace>DEEAE687-56F6-164E-2B2B-61A63E382DA7</tableSpace>
+<existingIndex>91AEC65E-CA81-8D03-DC76-39E7A9F05056</existingIndex>
+<indexSegment>595D8FDD-A07C-5574-839B-320C51AA9901</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

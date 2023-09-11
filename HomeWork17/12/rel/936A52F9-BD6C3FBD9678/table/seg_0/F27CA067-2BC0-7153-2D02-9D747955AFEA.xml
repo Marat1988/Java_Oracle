@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F27CA067-2BC0-7153-2D02-9D747955AFEA" schemaObject="13AEE5ED-4E85-1E06-5175-D9B85DEAE7B7" name="EMPLOYEEPOST">
+<sourceConnName>CoffeHouse</sourceConnName>
+<sourceObjSchema>SYS</sourceObjSchema>
+<sourceObjName>EMPLOYEEPOST</sourceObjName>
+<createdBy>HP</createdBy>
+<createdTime>2023-09-11 20:32:42 UTC</createdTime>
+<ownerDesignName>12</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="EMPLOYEEID" id="4AF72EC4-0F0F-9AFB-CFEC-73B1E9338D14">
+<sourceConnName>CoffeHouse</sourceConnName>
+<sourceObjSchema>EMPLOYEEPOST</sourceObjSchema>
+<sourceObjName>EMPLOYEEID</sourceObjName>
+<createdBy>HP</createdBy>
+<createdTime>2023-09-11 20:32:42 UTC</createdTime>
+<ownerDesignName>12</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C31D55D0-B16C-D87E-1019-A24986D02F24" referredColumn="B82DBA07-4268-BF01-7C0F-8A387E0E9EC3"/>
+</associations>
+</Column>
+<Column name="POSTID" id="9DF3C3E4-C0A1-14B0-9CB1-99EF6AD7CFC1">
+<sourceConnName>CoffeHouse</sourceConnName>
+<sourceObjSchema>EMPLOYEEPOST</sourceObjSchema>
+<sourceObjName>POSTID</sourceObjName>
+<createdBy>HP</createdBy>
+<createdTime>2023-09-11 20:32:42 UTC</createdTime>
+<ownerDesignName>12</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1AB1AB5C-5BD5-D341-7086-1FB54C80C06E" referredColumn="C88045FA-68AB-DADA-DBCF-F991C6A83468"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="66DAEE74-EAC2-5E18-A637-71B724DBBFA7" name="PK_EMPLOYEEPOST_EMPLOYEEID_POSTID">
+<sourceConnName>CoffeHouse</sourceConnName>
+<sourceObjSchema>SYS</sourceObjSchema>
+<sourceObjName>PK_EMPLOYEEPOST_EMPLOYEEID_POSTID</sourceObjName>
+<createdBy>HP</createdBy>
+<createdTime>2023-09-11 20:32:42 UTC</createdTime>
+<ownerDesignName>12</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4AF72EC4-0F0F-9AFB-CFEC-73B1E9338D14"/>
+<colUsage columnID="9DF3C3E4-C0A1-14B0-9CB1-99EF6AD7CFC1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2AA20F37-94F7-84AB-DD63-F88C12577AB9" schemaObject="13AEE5ED-4E85-1E06-5175-D9B85DEAE7B7" name="PK_EMPLOYEEPOST_EMPLOYEEID_POSTID">
+<sourceConnName>CoffeHouse</sourceConnName>
+<sourceObjSchema>SYS</sourceObjSchema>
+<sourceObjName>PK_EMPLOYEEPOST_EMPLOYEEID_POSTID</sourceObjName>
+<createdBy>HP</createdBy>
+<createdTime>2023-09-11 20:32:42 UTC</createdTime>
+<ownerDesignName>12</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4AF72EC4-0F0F-9AFB-CFEC-73B1E9338D14"/>
+<colUsage columnID="9DF3C3E4-C0A1-14B0-9CB1-99EF6AD7CFC1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="816CCFEB-AD2A-19C6-02C3-E9EB1D06BF42" name="FK_EMPLOYEEPOST_EMPLOYEEID">
+<createdBy>HP</createdBy>
+<createdTime>2023-09-11 20:32:42 UTC</createdTime>
+<ownerDesignName>12</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4AF72EC4-0F0F-9AFB-CFEC-73B1E9338D14"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FB6452DB-B276-21F7-43A7-A83B87B74DDF" name="FK_EMPLOYEEPOST_POSTID">
+<createdBy>HP</createdBy>
+<createdTime>2023-09-11 20:32:42 UTC</createdTime>
+<ownerDesignName>12</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9DF3C3E4-C0A1-14B0-9CB1-99EF6AD7CFC1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

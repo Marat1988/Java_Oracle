@@ -1,0 +1,197 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4713477A-5436-BDF7-C726-6A7347B49CEA" schemaObject="13AEE5ED-4E85-1E06-5175-D9B85DEAE7B7" name="TYPEPRODUCT">
+<sourceConnName>CoffeHouse</sourceConnName>
+<sourceObjSchema>SYS</sourceObjSchema>
+<sourceObjName>TYPEPRODUCT</sourceObjName>
+<createdBy>HP</createdBy>
+<createdTime>2023-09-11 20:35:58 UTC</createdTime>
+<ownerDesignName>12</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="TYPEID" id="ACAA56E8-3123-353C-6C4E-3429BB747D0A">
+<sourceConnName>CoffeHouse</sourceConnName>
+<sourceObjSchema>TYPEPRODUCT</sourceObjSchema>
+<sourceObjName>TYPEID</sourceObjName>
+<createdBy>HP</createdBy>
+<createdTime>2023-09-11 20:35:58 UTC</createdTime>
+<ownerDesignName>12</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementGenerateAlways>true</autoIncrementGenerateAlways>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementDisableCache>false</autoIncrementDisableCache>
+<autoIncrementCache>20</autoIncrementCache>
+<autoIncrementOrder>false</autoIncrementOrder>
+</Column>
+<Column name="NAMERUS" id="1B3026D5-3427-7896-4CE8-3B0EB0ACAF11">
+<sourceConnName>CoffeHouse</sourceConnName>
+<sourceObjSchema>TYPEPRODUCT</sourceObjSchema>
+<sourceObjName>NAMERUS</sourceObjName>
+<createdBy>HP</createdBy>
+<createdTime>2023-09-11 20:35:58 UTC</createdTime>
+<ownerDesignName>12</ownerDesignName>
+<constraintName>CK_TYPEPRODUCT_NAMERUS</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="NameRus&lt;&gt;&apos;&apos;"/>
+<implementationDef dbType="Oracle Database 12cR2" definition="NameRus&lt;&gt;&apos;&apos;"/>
+</checkConstraint>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NAMEENG" id="EA3EABD5-104C-0FAC-B379-2D47A882C661">
+<sourceConnName>CoffeHouse</sourceConnName>
+<sourceObjSchema>TYPEPRODUCT</sourceObjSchema>
+<sourceObjName>NAMEENG</sourceObjName>
+<createdBy>HP</createdBy>
+<createdTime>2023-09-11 20:35:58 UTC</createdTime>
+<ownerDesignName>12</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SUBGROUPID" id="4417A4E6-5BB2-5519-D170-19E62715AD23">
+<sourceConnName>CoffeHouse</sourceConnName>
+<sourceObjSchema>TYPEPRODUCT</sourceObjSchema>
+<sourceObjName>SUBGROUPID</sourceObjName>
+<createdBy>HP</createdBy>
+<createdTime>2023-09-11 20:35:58 UTC</createdTime>
+<ownerDesignName>12</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1E8F0F2C-513E-F397-3BE0-C2A624677569" referredColumn="9EE17929-97D0-DB9B-09A8-93BC12FD56B7"/>
+</associations>
+</Column>
+<Column name="PRICE" id="4CAD4862-B1FB-6BA5-2920-4335630EE75E">
+<sourceConnName>CoffeHouse</sourceConnName>
+<sourceObjSchema>TYPEPRODUCT</sourceObjSchema>
+<sourceObjName>PRICE</sourceObjName>
+<createdBy>HP</createdBy>
+<createdTime>2023-09-11 20:35:58 UTC</createdTime>
+<ownerDesignName>12</ownerDesignName>
+<constraintName>CK_TYPEPRODUCT_PRICE</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="Price&gt;0"/>
+<implementationDef dbType="Oracle Database 12cR2" definition="Price&gt;0"/>
+</checkConstraint>
+<ownDataTypeParameters>,8,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7C3D61F2-22E1-3926-96B9-135068B2A4D5" name="PK_TYPEPRODUCT_TYPEID">
+<sourceConnName>CoffeHouse</sourceConnName>
+<sourceObjSchema>SYS</sourceObjSchema>
+<sourceObjName>PK_TYPEPRODUCT_TYPEID</sourceObjName>
+<createdBy>HP</createdBy>
+<createdTime>2023-09-11 20:35:58 UTC</createdTime>
+<ownerDesignName>12</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ACAA56E8-3123-353C-6C4E-3429BB747D0A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A71F173E-E3E1-64B3-B0DB-BF320876B2E0" name="UQ_TYPEPRODUCT_NAMEENG">
+<sourceConnName>CoffeHouse</sourceConnName>
+<sourceObjSchema>SYS</sourceObjSchema>
+<sourceObjName>UQ_TYPEPRODUCT_NAMEENG</sourceObjName>
+<createdBy>HP</createdBy>
+<createdTime>2023-09-11 20:35:58 UTC</createdTime>
+<ownerDesignName>12</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EA3EABD5-104C-0FAC-B379-2D47A882C661"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DC9941C1-AC1A-09BC-5543-5B406A14D781" name="UQ_TYPEPRODUCT_NAMERUS">
+<sourceConnName>CoffeHouse</sourceConnName>
+<sourceObjSchema>SYS</sourceObjSchema>
+<sourceObjName>UQ_TYPEPRODUCT_NAMERUS</sourceObjName>
+<createdBy>HP</createdBy>
+<createdTime>2023-09-11 20:35:58 UTC</createdTime>
+<ownerDesignName>12</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1B3026D5-3427-7896-4CE8-3B0EB0ACAF11"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="924559EF-7608-FAD3-109D-3E9C770E7F79" schemaObject="13AEE5ED-4E85-1E06-5175-D9B85DEAE7B7" name="PK_TYPEPRODUCT_TYPEID">
+<sourceConnName>CoffeHouse</sourceConnName>
+<sourceObjSchema>SYS</sourceObjSchema>
+<sourceObjName>PK_TYPEPRODUCT_TYPEID</sourceObjName>
+<createdBy>HP</createdBy>
+<createdTime>2023-09-11 20:35:58 UTC</createdTime>
+<ownerDesignName>12</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ACAA56E8-3123-353C-6C4E-3429BB747D0A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B5E180CE-DFF2-9F54-F6CD-6E43F610D334" schemaObject="13AEE5ED-4E85-1E06-5175-D9B85DEAE7B7" name="UQ_TYPEPRODUCT_NAMEENG">
+<sourceConnName>CoffeHouse</sourceConnName>
+<sourceObjSchema>SYS</sourceObjSchema>
+<sourceObjName>UQ_TYPEPRODUCT_NAMEENG</sourceObjName>
+<createdBy>HP</createdBy>
+<createdTime>2023-09-11 20:35:58 UTC</createdTime>
+<ownerDesignName>12</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EA3EABD5-104C-0FAC-B379-2D47A882C661"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AA3B515C-C6EB-6C59-9365-201957EE43AE" schemaObject="13AEE5ED-4E85-1E06-5175-D9B85DEAE7B7" name="UQ_TYPEPRODUCT_NAMERUS">
+<sourceConnName>CoffeHouse</sourceConnName>
+<sourceObjSchema>SYS</sourceObjSchema>
+<sourceObjName>UQ_TYPEPRODUCT_NAMERUS</sourceObjName>
+<createdBy>HP</createdBy>
+<createdTime>2023-09-11 20:35:58 UTC</createdTime>
+<ownerDesignName>12</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1B3026D5-3427-7896-4CE8-3B0EB0ACAF11"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8F9FCA22-3DF3-54EE-A7CA-B86DFA9D0753" name="FK_TYPEPRODUCT_SUBGROUPID">
+<createdBy>HP</createdBy>
+<createdTime>2023-09-11 20:35:58 UTC</createdTime>
+<ownerDesignName>12</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4417A4E6-5BB2-5519-D170-19E62715AD23"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

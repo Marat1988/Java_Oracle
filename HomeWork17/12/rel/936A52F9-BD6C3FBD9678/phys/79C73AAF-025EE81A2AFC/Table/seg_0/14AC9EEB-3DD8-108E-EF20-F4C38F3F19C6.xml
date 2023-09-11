@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="SCHEDULE" directorySegmentName="seg_0" id="14AC9EEB-3DD8-108E-EF20-F4C38F3F19C6">
+<createdBy>HP</createdBy>
+<createdTime>2023-09-11 20:33:23 UTC</createdTime>
+<ownerDesignName>12</ownerDesignName>
+<schemaObject>13AEE5ED-4E85-1E06-5175-D9B85DEAE7B7</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>6EB0BE56-C559-BE1C-C801-47757E1CAB71</segment>
+<tableSpace>DEEAE687-56F6-164E-2B2B-61A63E382DA7</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="SCHEDULEDATE" id="5363C614-351C-C849-28F9-6595806A0E3F">
+<createdBy>HP</createdBy>
+<createdTime>2023-09-11 20:33:23 UTC</createdTime>
+<ownerDesignName>12</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COFFEHOUSEID" id="A5DA3DD3-6875-CFE7-D250-71713A137901">
+<createdBy>HP</createdBy>
+<createdTime>2023-09-11 20:33:23 UTC</createdTime>
+<ownerDesignName>12</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TIMEBEGIN" id="AE056B19-E363-E090-D440-06B8B2590A66">
+<createdBy>HP</createdBy>
+<createdTime>2023-09-11 20:33:23 UTC</createdTime>
+<ownerDesignName>12</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TIMEEND" id="BDA381B9-59CA-B3EB-FD44-C67A21C73E55">
+<createdBy>HP</createdBy>
+<createdTime>2023-09-11 20:33:23 UTC</createdTime>
+<ownerDesignName>12</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PK_SCHEDULE_SCHEDULEDATE_COFFEHOUSEID" id="905EFCBA-8263-4275-4DF3-43980E395036">
+<createdBy>HP</createdBy>
+<createdTime>2023-09-11 20:33:23 UTC</createdTime>
+<ownerDesignName>12</ownerDesignName>
+<schemaObject>13AEE5ED-4E85-1E06-5175-D9B85DEAE7B7</schemaObject>
+<segment>595D8FDD-A07C-5574-839B-320C51AA9901</segment>
+<tableSpace>DEEAE687-56F6-164E-2B2B-61A63E382DA7</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_SCHEDULE_COFFEHOUSEID" id="D8787FAE-4370-02C5-ADE6-A51AB15DAC24">
+<createdBy>HP</createdBy>
+<createdTime>2023-09-11 20:33:23 UTC</createdTime>
+<ownerDesignName>12</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_SCHEDULE_SCHEDULEDATE_COFFEHOUSEID" id="C35C9E5F-0F8B-CBBF-BE94-6FD23FA4CFC9">
+<createdBy>HP</createdBy>
+<createdTime>2023-09-11 20:33:23 UTC</createdTime>
+<ownerDesignName>12</ownerDesignName>
+<segment>595D8FDD-A07C-5574-839B-320C51AA9901</segment>
+<tableSpace>DEEAE687-56F6-164E-2B2B-61A63E382DA7</tableSpace>
+<existingIndex>905EFCBA-8263-4275-4DF3-43980E395036</existingIndex>
+<indexSegment>595D8FDD-A07C-5574-839B-320C51AA9901</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.storage.oracle.TableCheckConstraintOracle">
+<TableCheckConstraint name="CK_SCHEDULE" id="421471A7-2187-B80E-32A3-CF48A46A127B">
+<createdBy>HP</createdBy>
+<createdTime>2023-09-11 20:33:23 UTC</createdTime>
+<ownerDesignName>12</ownerDesignName>
+</TableCheckConstraint>
+</tableCheckConstraints>
+</TableProxyOraclev12c>

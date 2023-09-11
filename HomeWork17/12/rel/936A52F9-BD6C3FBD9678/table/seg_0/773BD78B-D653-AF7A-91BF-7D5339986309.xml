@@ -1,0 +1,162 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="773BD78B-D653-AF7A-91BF-7D5339986309" schemaObject="13AEE5ED-4E85-1E06-5175-D9B85DEAE7B7" name="ORDERS">
+<sourceConnName>CoffeHouse</sourceConnName>
+<sourceObjSchema>SYS</sourceObjSchema>
+<sourceObjName>ORDERS</sourceObjName>
+<createdBy>HP</createdBy>
+<createdTime>2023-09-11 20:33:44 UTC</createdTime>
+<ownerDesignName>12</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ORDERID" id="E65A38E6-2DC9-90B6-E64E-C28F723F863C">
+<sourceConnName>CoffeHouse</sourceConnName>
+<sourceObjSchema>ORDERS</sourceObjSchema>
+<sourceObjName>ORDERID</sourceObjName>
+<createdBy>HP</createdBy>
+<createdTime>2023-09-11 20:33:44 UTC</createdTime>
+<ownerDesignName>12</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementGenerateAlways>true</autoIncrementGenerateAlways>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementDisableCache>false</autoIncrementDisableCache>
+<autoIncrementCache>20</autoIncrementCache>
+<autoIncrementOrder>false</autoIncrementOrder>
+</Column>
+<Column name="DATEORDER" id="1AB5BB3E-673E-0152-1BF0-B82602D1C3C5">
+<sourceConnName>CoffeHouse</sourceConnName>
+<sourceObjSchema>ORDERS</sourceObjSchema>
+<sourceObjName>DATEORDER</sourceObjName>
+<createdBy>HP</createdBy>
+<createdTime>2023-09-11 20:33:44 UTC</createdTime>
+<ownerDesignName>12</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CUSTOMERID" id="EA0242E1-B22C-F7D6-8814-46385F878594">
+<sourceConnName>CoffeHouse</sourceConnName>
+<sourceObjSchema>ORDERS</sourceObjSchema>
+<sourceObjName>CUSTOMERID</sourceObjName>
+<createdBy>HP</createdBy>
+<createdTime>2023-09-11 20:33:44 UTC</createdTime>
+<ownerDesignName>12</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="00E02055-8190-7BA4-3AED-E9A1EB00A229" referredColumn="68E36789-481D-3088-6D0F-B7E1F45DBDC7"/>
+</associations>
+</Column>
+<Column name="EMPLOYEEID" id="35F7571A-FF7B-1E5E-CA82-2A7F585084FE">
+<sourceConnName>CoffeHouse</sourceConnName>
+<sourceObjSchema>ORDERS</sourceObjSchema>
+<sourceObjName>EMPLOYEEID</sourceObjName>
+<createdBy>HP</createdBy>
+<createdTime>2023-09-11 20:33:44 UTC</createdTime>
+<ownerDesignName>12</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="85859D15-E439-9BC3-7634-44B48912BD9D" referredColumn="B82DBA07-4268-BF01-7C0F-8A387E0E9EC3"/>
+</associations>
+</Column>
+<Column name="COFFEHOUSEID" id="70A7B16D-76BC-9289-F969-D9F28520EEDA">
+<sourceConnName>CoffeHouse</sourceConnName>
+<sourceObjSchema>ORDERS</sourceObjSchema>
+<sourceObjName>COFFEHOUSEID</sourceObjName>
+<createdBy>HP</createdBy>
+<createdTime>2023-09-11 20:33:44 UTC</createdTime>
+<ownerDesignName>12</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8FFA3A4D-C850-0014-329A-E2C8EA439D4E" referredColumn="06FCCF74-D7C1-CFC6-792A-67D8726B0CBB"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="733B0DB2-BE27-2DF0-BDF0-B47C4CF36B16" name="PK_ORDERS_ORDERID">
+<sourceConnName>CoffeHouse</sourceConnName>
+<sourceObjSchema>SYS</sourceObjSchema>
+<sourceObjName>PK_ORDERS_ORDERID</sourceObjName>
+<createdBy>HP</createdBy>
+<createdTime>2023-09-11 20:33:44 UTC</createdTime>
+<ownerDesignName>12</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E65A38E6-2DC9-90B6-E64E-C28F723F863C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9D524B11-CA12-13F0-6B6C-F1107EEAF0E4" schemaObject="13AEE5ED-4E85-1E06-5175-D9B85DEAE7B7" name="PK_ORDERS_ORDERID">
+<sourceConnName>CoffeHouse</sourceConnName>
+<sourceObjSchema>SYS</sourceObjSchema>
+<sourceObjName>PK_ORDERS_ORDERID</sourceObjName>
+<createdBy>HP</createdBy>
+<createdTime>2023-09-11 20:33:44 UTC</createdTime>
+<ownerDesignName>12</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E65A38E6-2DC9-90B6-E64E-C28F723F863C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="89904A00-44CC-CD92-065C-5B6886F4C452" name="FK_ORDERS_COFFEHOUSEID">
+<createdBy>HP</createdBy>
+<createdTime>2023-09-11 20:33:44 UTC</createdTime>
+<ownerDesignName>12</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="70A7B16D-76BC-9289-F969-D9F28520EEDA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7C85338E-D1F6-7C01-83EE-C586D11C4BB6" name="FK_ORDERS_CUSTOMERID">
+<createdBy>HP</createdBy>
+<createdTime>2023-09-11 20:33:44 UTC</createdTime>
+<ownerDesignName>12</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EA0242E1-B22C-F7D6-8814-46385F878594"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0667D2C5-1293-4D54-422E-F88000B813B5" name="FK_ORDERS_EMPLOYEEID">
+<createdBy>HP</createdBy>
+<createdTime>2023-09-11 20:33:44 UTC</createdTime>
+<ownerDesignName>12</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="35F7571A-FF7B-1E5E-CA82-2A7F585084FE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
