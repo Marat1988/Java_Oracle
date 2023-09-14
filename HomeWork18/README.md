@@ -35,3 +35,10 @@
 <li>Умножение;</li>
 <li>Деление.</li>
 </ul>
+
+<br>Полезные ссылки.<br>
+
+
+https://www.youtube.com/watch?v=OA2etCryFec
+https://spring.io/guides/gs/producing-web-service/
+https://javarush.com/groups/posts/2488-obzor-rest-chastjh-3-sozdanie-restful-servisa-na-spring-boot
