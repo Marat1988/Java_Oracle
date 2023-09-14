@@ -1,0 +1,80 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://spring.io/guides/gs-fraction-web-service"
+           targetNamespace="http://spring.io/guides/gs-fraction-web-service" elementFormDefault="qualified">
+
+    <!-- Сложение,   вычитание, умножение, деление дробей-->
+     <xs:element name="getCalcFractionRequest">
+         <xs:complexType>
+             <xs:sequence>
+                 <xs:element name="fraction1" type="tns:fraction"/>
+                 <xs:element name="fraction2" type="tns:fraction"/>
+                 <xs:element name="operation" type="xs:string"/>
+             </xs:sequence>
+         </xs:complexType>
+     </xs:element>
+     <xs:element name="getCalcFractionResponse">
+         <xs:complexType>
+             <xs:sequence>
+                 <xs:element name="fraction" type="tns:fraction"/>
+             </xs:sequence>
+         </xs:complexType>
+     </xs:element>
+
+    <!-- Сокращение дробей-->
+     <xs:element name="getReducingFractionRequest">
+         <xs:complexType>
+             <xs:sequence>
+                 <xs:element name="fraction" type="tns:fraction"/>
+             </xs:sequence>
+         </xs:complexType>
+     </xs:element>
+     <xs:element name="getReducingFractionResponse">
+         <xs:complexType>
+             <xs:sequence>
+                 <xs:element name="fraction" type="tns:fraction"/>
+             </xs:sequence>
+         </xs:complexType>
+     </xs:element>
+
+    <!--Проверка дроби на правильность-->
+    <xs:element name="getProperFractionRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="fraction" type="tns:fraction"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="getProperFractionResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="answer" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+
+
+ <!--    <xs:element name="checkFractionRequest">-->
+<!--        <xs:complexType>-->
+<!--            <xs:sequence>-->
+<!--                <xs:element name="fraction" type="tns:fraction"/>-->
+<!--            </xs:sequence>-->
+<!--        </xs:complexType>-->
+<!--    </xs:element>-->
+
+<!--    <xs:element name="getCheckFractionResponse">-->
+<!--        <xs:complexType>-->
+<!--            <xs:sequence>-->
+<!--                <xs:element name="answer" type="xs:string"/>-->
+<!--            </xs:sequence>-->
+<!--        </xs:complexType>-->
+<!--    </xs:element>-->
+
+
+
+    <xs:complexType name="fraction">
+        <xs:sequence>
+            <xs:element name="numerator" type="xs:int"/>
+            <xs:element name="denominator" type="xs:int"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>
