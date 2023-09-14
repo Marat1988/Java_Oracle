@@ -38,7 +38,8 @@
 
 <br>Полезные ссылки.<br>
 
-
-https://www.youtube.com/watch?v=OA2etCryFec
-https://spring.io/guides/gs/producing-web-service/
-https://javarush.com/groups/posts/2488-obzor-rest-chastjh-3-sozdanie-restful-servisa-na-spring-boot
+<ul>
+<li>https://www.youtube.com/watch?v=OA2etCryFec</li>
+<li>https://spring.io/guides/gs/producing-web-service/</li>
+<li>https://javarush.com/groups/posts/2488-obzor-rest-chastjh-3-sozdanie-restful-servisa-na-spring-boot</li>
+</ul>
