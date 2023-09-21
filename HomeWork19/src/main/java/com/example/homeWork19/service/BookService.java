@@ -13,19 +13,15 @@ import java.util.List;
 @RequiredArgsConstructor
 public class BookService {
     private final BookRepository bookRepository;
-
     public List<Book> listBook(){
         return bookRepository.findAll();
     }
-
     public void deleteBook(int bookId){
         bookRepository.deleteById(bookId);
     }
-
     public Book findById(int bookId){
         return bookRepository.findById(bookId).orElse(null);
     }
-
     public void saveBook(Book book){
         bookRepository.save(book);
     }
@@ -44,7 +40,6 @@ public class BookService {
     public List<Book> findByPageCount(int pageCount){
         return bookRepository.findByPageCount(pageCount);
     }
-
     public List<Book> findByDescriptionContains(String word){
         return bookRepository.findByDescriptionContains(word);
     }

@@ -78,5 +78,4 @@ public class BookController {
         model.addAttribute("listBook", bookList);
         return "index";
     }
-
 }
