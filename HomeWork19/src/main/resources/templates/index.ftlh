@@ -170,7 +170,7 @@
 
     <div class="search">
         <h2>Поиск по слову для поиска в кратком описании книги</h2>
-        <form action="/findDescriptionIsLike" method="get" class="form-example">
+        <form action="/findByDescriptionContains" method="get" class="form-example">
             <div class="form-example">
                 <label for="word">Введите слово для поиска: </label>
                 <input type="text" name="word" id="word" required/>
@@ -181,13 +181,6 @@
         </form>
     </div>
 
-
 </div>
-
-
-
-
-
-
 </body>
 </html>
