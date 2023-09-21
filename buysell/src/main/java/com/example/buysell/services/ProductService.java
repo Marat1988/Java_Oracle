@@ -64,11 +64,11 @@ public class ProductService {
         return image;
     }
 
-    public void deleteProduct(Long id) {
-        productRepository.deleteById(id);
-    }
-
     public Product getProductById(Long id) {
         return productRepository.findById(id).orElse(null);
+    }
+
+    public List<Product> findProductQuery(Long supplierId, Long priceBegin, Long priceEnd){
+        return productRepository.findByProductQuery(supplierId, priceBegin, priceEnd);
     }
 }

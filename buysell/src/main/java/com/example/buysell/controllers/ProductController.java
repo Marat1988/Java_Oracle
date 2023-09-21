@@ -1,26 +1,44 @@
 package com.example.buysell.controllers;
 
-import com.example.buysell.models.Product;
-import com.example.buysell.models.Recycler;
-import com.example.buysell.models.User;
+import com.example.buysell.models.*;
 import com.example.buysell.services.ProductService;
 import com.example.buysell.services.RecyclerService;
+import com.example.buysell.services.SupplierService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import java.security.Principal;
+import java.util.List;
+
+import static org.springframework.web.bind.annotation.RequestMethod.GET;
 
 @Controller
 @RequiredArgsConstructor
 public class ProductController {
     private final ProductService productService;
     private final RecyclerService recyclerService;
+    private final SupplierService supplierService;
 
     @GetMapping("/")
     public String products(Principal principal, Model model) {
         model.addAttribute("products", productService.listProducts());
         model.addAttribute("user", productService.getUserByPrincipal(principal));
+        model.addAttribute("suppliers", supplierService.listSupplier());
+        return "products";
+    }
+
+//    https://www.baeldung.com/spring-requestmapping
+    @RequestMapping(value = "/product/find", method = GET)
+    public String productSearch(
+            @RequestParam("supplierId") long supplierId,
+            @RequestParam("priceBegin") long priceBegin,
+            @RequestParam("priceEnd") long priceEnd,
+            Principal principal, Model model) {
+        List<Product> products = productService.findProductQuery(supplierId, priceBegin, priceEnd);
+        model.addAttribute("products",products);
+        model.addAttribute("user", productService.getUserByPrincipal(principal));
+        model.addAttribute("suppliers", supplierService.listSupplier());
         return "products";
     }
 

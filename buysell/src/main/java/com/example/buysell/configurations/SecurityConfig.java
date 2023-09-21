@@ -25,12 +25,13 @@ public class SecurityConfig {
         http
                 .authorizeHttpRequests((requests) -> requests
                         .requestMatchers("/login", "/registration","/static/images/tribrata.png").permitAll()
-                        .requestMatchers( "/","/product/**", "/image/**", "/user/**","/static/**")
+                        .requestMatchers( "/","/product/**", "/image/**", "/user/**")
                         .hasAnyAuthority("ROLE_ADMIN","ROLE_USER")
                         .anyRequest().authenticated()
                 )
                 .formLogin((form) -> form
                         .loginPage("/login")
+                        .defaultSuccessUrl("/", true)
                         .permitAll()
                 )
                 .logout((logout) -> logout.permitAll());
