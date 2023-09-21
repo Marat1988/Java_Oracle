@@ -1,0 +1,54 @@
+h1, h2{
+    text-align: left;
+    color: red;
+    display: block;
+}
+h1{
+    text-align: center;
+}
+#resp-table {
+    width: 100%;
+    display: table;
+}
+#resp-table-body{
+    display: table-row-group;
+}
+.resp-table-row{
+    display: table-row;
+}
+.table-body-cell{
+    display: table-cell;
+    border: 1px solid black;
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+}
+.resp-table-row.header{
+    font-weight: bold;
+}
+.resp-table-row.header{
+    text-align: center;
+}
+
+form.form-example {
+    display: table;
+}
+
+div.form-example {
+    display: table-row;
+}
+
+label,
+input {
+    display: table-cell;
+    margin-bottom: 10px;
+}
+
+label {
+    padding-right: 10px;
+}
+.search{
+    display: inline-block;
+    border: 1px solid red;
+    margin: 5px;
+}
