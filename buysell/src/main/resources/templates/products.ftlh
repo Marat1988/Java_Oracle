@@ -17,7 +17,7 @@
                         <a class="nav-link" href="/product/orders">История заказов</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/product/recycler">Корзина</a>
+                        <a class="nav-link" href="/product/recycler" id="userRecycler">Корзина</a>
                     </li>
                     <#if user.isAdmin()>
                         <li class="nav-item dropdown">
@@ -43,53 +43,75 @@
     </nav>
 
 
-        <div class="row main">
-            <div class="col-2 search">
-                <h4>Поиск товара</h4>
-                <form action="/product/find" method="get">
-                    <div class="form-floating mb-3">
-                        <select class="form-control" name="supplierId" id="supplier" required>
-                            <option value="0">Все поставщики</option>
-                            <#list suppliers as supplier>
-                                <option value="${supplier.id}">${supplier.name}</option>
-                            </#list>
-                        </select>
-                        <label for="supplier" class="form-label">Выберите поставщика товара</label>
-                    </div>
-                    <div class="form mb-3">
-                        <label for="priceBegin"  class="form-label">Цена между</label>
-                        <input class="form-control" type="number" min="1" max="1000000" name="priceBegin" id="priceBegin" value="1" required/>
-                        <label for="priceEnd"  class="form-label">И</label>
-                        <input class="form-control" type="number" min="1" max="1000000" name="priceEnd" id="priceEnd" value="1000000" required/>
-                    </div>
-                    <div>
-                        <button class="btn btn-outline-success" type="submit">Поиск</button>
-                    </div>
-                </form>
-            </div>
-            <div class="col-10 products">
-                <h4>Фото товара</h4>
-                <div class="row row-cols-1 row-cols-md-5">
-                    <#list products as product>
-                        <div class="col">
-                            <div class="card">
-                                <img src="/images/${product.getImages()[0].getId()}" class="card-img-top" alt="Hollywood Sign on The Hill" height="150px"/>
-                                <div class="card-body">
-                                    <h5 class="card-title">${product.title}</h5>
-                                    <p class="card-text">Цена: ${product.price} ₽</p>
-                                    <p class="card-text"><a href="/product/${product.id}" target="_blank">Подробнее</a></p>
-
-                                    <form action="/product/buy/${product.id}" method="post">
-                                        <input type="hidden" name="_csrf" value="${_csrf.token}">
-                                        <input type="submit" class="btn btn-primary" value="В корзину">
-                                    </form>
-                                </div>
+    <div class="row main">
+        <div class="col-2 search">
+            <h4>Поиск товара</h4>
+            <form action="/product/find" method="get">
+                <div class="form-floating mb-3">
+                    <select class="form-control" name="supplierId" id="supplier" required>
+                        <option value="0">Все поставщики</option>
+                        <#list suppliers as supplier>
+                            <option value="${supplier.id}">${supplier.name}</option>
+                        </#list>
+                    </select>
+                    <label for="supplier" class="form-label">Выберите поставщика товара</label>
+                </div>
+                <div class="form mb-3">
+                    <label for="priceBegin" class="form-label">Цена между</label>
+                    <input class="form-control" type="number" min="1" max="1000000" name="priceBegin" id="priceBegin"
+                           value="1" required/>
+                    <label for="priceEnd" class="form-label">И</label>
+                    <input class="form-control" type="number" min="1" max="1000000" name="priceEnd" id="priceEnd"
+                           value="1000000" required/>
+                </div>
+                <div>
+                    <button class="btn btn-outline-success" type="submit">Поиск</button>
+                </div>
+            </form>
+        </div>
+        <div class="col-10 products">
+            <h4>Фото товара</h4>
+            <div class="row row-cols-1 row-cols-md-5">
+                <#list products as product>
+                    <div class="col">
+                        <div class="card">
+                            <img src="/images/${product.getImages()[0].getId()}" class="card-img-top"
+                                 alt="Hollywood Sign on The Hill" height="150px"/>
+                            <div class="card-body">
+                                <h5 class="card-title">${product.title}</h5>
+                                <p class="card-text">Цена: ${product.price} ₽</p>
+                                <p class="card-text"><a href="/product/${product.id}" target="_blank">Подробнее</a></p>
+                                <#--                                    action="/product/buy/${product.id}" method="post"-->
+                                <form id="formBy${product.id}" onsubmit=getBuy()>
+                                    <input name="id" id="id" value="#{product.id}"/>
+                                    <input type="hidden" name="_csrf" value="${_csrf.token}">
+                                    <input type="submit" class="btn btn-primary" value="В корзину">
+                                </form>
                             </div>
                         </div>
-                    </#list>
-                </div>
+                    </div>
+                </#list>
             </div>
         </div>
+    </div>
+
+    <script>
+        function getBuy() {
+            this.event.preventDefault();
+            const data = new FormData(this.event.target);
+            fetch("/product/buy", {
+                method: "POST",
+                body: data
+            })
+                .then(response => response.json())
+                .then(response => {
+                    let countProduct = response.quantity;
+                    let recyclerLink = document.getElementById("userRecycler");
+                    recyclerLink.innerText = "Корзина (" + countProduct + ")";
+                    console.log(recyclerLink);
+                })
+        }
+    </script>
 
 
 

@@ -4,14 +4,26 @@ import com.example.buysell.models.*;
 import com.example.buysell.services.ProductService;
 import com.example.buysell.services.RecyclerService;
 import com.example.buysell.services.SupplierService;
+import com.fasterxml.jackson.databind.node.ObjectNode;
 import lombok.RequiredArgsConstructor;
+import org.json.JSONObject;
+import org.springframework.http.HttpEntity;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.net.URL;
+import java.net.http.HttpResponse;
 import java.security.Principal;
 import java.util.List;
 
 import static org.springframework.web.bind.annotation.RequestMethod.GET;
+import static org.springframework.web.bind.annotation.RequestMethod.POST;
 
 @Controller
 @RequiredArgsConstructor
@@ -52,7 +64,8 @@ public class ProductController {
     }
 
 
-    @PostMapping("/product/buy/{id}")
+    /*Old method*/
+    /*@PostMapping("/product/buy/{id}")
     public String buyProduct(@PathVariable Long id, Principal principal) {
         Product product = productService.getProductById(id);
         User user = productService.getUserByPrincipal(principal);
@@ -68,5 +81,6 @@ public class ProductController {
             }
         }
         return "redirect:/";
-    }
+    }*/
+
 }

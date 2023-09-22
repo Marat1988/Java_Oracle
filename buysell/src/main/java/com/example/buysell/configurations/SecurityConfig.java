@@ -25,7 +25,7 @@ public class SecurityConfig {
         http
                 .authorizeHttpRequests((requests) -> requests
                         .requestMatchers("/login", "/registration","/static/images/tribrata.png").permitAll()
-                        .requestMatchers( "/","/product/**", "/image/**", "/user/**")
+                        .requestMatchers( "/**","/product/**", "/image/**", "/user/**","recyc/**")
                         .hasAnyAuthority("ROLE_ADMIN","ROLE_USER")
                         .anyRequest().authenticated()
                 )

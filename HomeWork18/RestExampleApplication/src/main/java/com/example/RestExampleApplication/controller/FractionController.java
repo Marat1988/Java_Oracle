@@ -30,7 +30,7 @@ public class FractionController {
         }
         return new ResponseEntity<>(newFraction, HttpStatus.OK);
     }
-
+    
     @PostMapping(value = "/checkCorrect")
     public ResponseEntity<Fraction> checkCorrectFraction(@RequestBody Fraction fraction) {
         fraction.setOperation(fractionService.correctFraction(fraction) ? "Дробь правильная" : "Дробь не правильная");
