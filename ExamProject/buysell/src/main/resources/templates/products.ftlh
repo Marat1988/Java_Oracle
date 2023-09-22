@@ -1,6 +1,6 @@
 <#import "blocks/template.ftlh" as c>
 <@c.page>
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">${user.getFullname()}</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -98,8 +98,6 @@
                                         </form>
                                     </#if>
                                 </div>
-
-
                             </div>
                         </div>
                     </div>
