@@ -25,6 +25,14 @@ public class RecyclerService {
         recyclerRepository.deleteById(id);
     }
 
+    public void deleteRecyclerByProductId(Long productId){
+        List<Recycler> recyclerList = recyclerRepository.findAll()
+                        .stream()
+                        .filter(item->item.getProductId().equals(productId))
+                                .toList();
+        recyclerRepository.deleteAll(recyclerList);
+    }
+
     public void addProductToRecycler(Product product, User user) {
         Recycler recycler = new Recycler(user.getId(), product.getId(), product.getPrice(), 1, product.getTitle());
         recyclerRepository.save(recycler);
@@ -55,4 +63,6 @@ public class RecyclerService {
                 .findFirst()
                 .orElse(null);
     }
+
+
 }

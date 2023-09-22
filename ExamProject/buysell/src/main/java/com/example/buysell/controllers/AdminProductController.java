@@ -55,7 +55,7 @@ public class AdminProductController {
 
     @PostMapping("/admin/product/delete/{id}")
     public String groupDelete(@PathVariable Long id) {
-        recyclerService.deleteProductFromRecycler(id);
+        recyclerService.deleteRecyclerByProductId(id);
         productService.deleteProduct(id);
         return "redirect:/";
     }
