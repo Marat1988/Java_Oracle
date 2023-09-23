@@ -27,4 +27,8 @@ public class ApartmentService {
     public void delete(Integer id) {
         apartmentRepository.deleteById(id);
     }
+
+    public Apartment findById(Integer apartmentId) {
+        return apartmentRepository.findById(apartmentId).orElse(null);
+    }
 }

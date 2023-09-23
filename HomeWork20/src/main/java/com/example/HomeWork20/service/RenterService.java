@@ -16,7 +16,7 @@ import java.util.List;
 public class RenterService {
     private final RenterRepository renterRepository;
 
-    public List<Renter> rentorlist(){
+    public List<Renter> rentorlist() {
         return renterRepository.findAll();
     }
 
@@ -26,6 +26,10 @@ public class RenterService {
 
     public void delete(Integer id) {
         renterRepository.deleteById(id);
+    }
+
+    public Renter findById(Integer renterId) {
+        return renterRepository.findById(renterId).orElse(null);
     }
 }
 

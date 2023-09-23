@@ -20,7 +20,7 @@
                         <a class="nav-link" href="/renters">Арендаторы</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Аренда</a>
+                        <a class="nav-link" href="/rents">Аренда</a>
                     </li>
                 </ul>
             </div>
