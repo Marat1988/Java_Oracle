@@ -21,7 +21,7 @@ public class LenvatorController {
     }
 
     @GetMapping("/lenvator/edit/{id}")
-    public String groupEditForm(@PathVariable("id") int id, Model model) {
+    public String lenvatorEditForm(@PathVariable("id") int id, Model model) {
         Lenvator lenvator = lenvatorService.lenvatorList()
                 .stream()
                 .filter(item -> item.getId()==id)
@@ -47,13 +47,13 @@ public class LenvatorController {
     }
 
     @PostMapping("/lenvator/delete/{id}")
-    public String groupDelete(@PathVariable Integer id) {
+    public String lenvatorDelete(@PathVariable Integer id) {
         lenvatorService.delete(id);
         return "redirect:/lenvators";
     }
 
     @PostMapping("/lenvator/create")
-    public String createGroup(Lenvator lenvator, Model model) {
+    public String createLenvator(Lenvator lenvator) {
         lenvatorService.save(lenvator);
         return "redirect:/lenvators";
     }

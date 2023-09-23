@@ -2,7 +2,7 @@
 <@c.page>
     <nav class="navbar sticky-top navbar-expand-lg navbar-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Панель навигации</a>
+            <a class="navbar-brand" href="https://klg.top-academy.ru/">Панель навигации</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -17,7 +17,7 @@
                         <a class="nav-link" href="#">Квартиры</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Арендаторы</a>
+                        <a class="nav-link" href="/renters">Арендаторы</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Аренда</a>

@@ -9,6 +9,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /*Арендатор*/
 @Entity
@@ -26,5 +27,5 @@ public class Renter {
     @Column(name="telephone", length = 20)
     private String telephone;
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "renter")
-    private ArrayList<Rent> rents = new ArrayList<>();
+    private List<Rent> rentList = new ArrayList<>();
 }

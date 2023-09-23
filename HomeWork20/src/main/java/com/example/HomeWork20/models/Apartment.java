@@ -8,6 +8,7 @@ import lombok.NoArgsConstructor;
 import org.hibernate.annotations.Check;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /*Квартиры*/
 @Entity
@@ -31,5 +32,5 @@ public class Apartment {
     @ManyToOne(cascade = CascadeType.REFRESH, fetch = FetchType.EAGER)
     private Lenvator lenvator;
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "apartment")
-    private ArrayList<Rent> rents = new ArrayList<>();
+    private List<Rent> rentsApartment = new ArrayList<>();
 }

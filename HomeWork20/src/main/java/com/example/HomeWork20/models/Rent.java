@@ -19,12 +19,12 @@ public class Rent {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="id")
     private int id;
-    @ManyToOne(cascade = CascadeType.REFRESH,fetch = FetchType.EAGER)
-    private Apartment apartment;
+    @Column(name="date_Time_Rent")
+    private LocalDateTime dateTimeRent; //Дата начала аренды
+    @Column(name="is_End")
+    private boolean isEnd; //Признак, что аренда закончилась
     @ManyToOne(cascade = CascadeType.REFRESH,fetch = FetchType.EAGER)
     private Renter renter;
-    @Column(name="dateTimeRent")
-    private LocalDateTime dateTimeRent; //Дата начала аренды
-    @Column(name="isEnd")
-    private boolean isEnd; //Признак, что аренда закончилась
+    @ManyToOne(cascade = CascadeType.REFRESH,fetch = FetchType.EAGER)
+    private Apartment apartment;
 }
