@@ -25,4 +25,8 @@ public class LenvatorService {
     public void delete(Integer id) {
         lenvatorRepository.deleteById(id);
     }
+
+    public Lenvator findById(Integer lenvatorId) {
+        return lenvatorRepository.findById(lenvatorId).orElse(null);
+    }
 }

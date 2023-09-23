@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 @RequiredArgsConstructor
 public class LenvatorController {
     private final LenvatorService lenvatorService;
-
     @GetMapping("/lenvators")
     public String lenvators(Model model){
         model.addAttribute("lenvators", lenvatorService.lenvatorList());

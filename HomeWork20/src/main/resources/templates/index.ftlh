@@ -14,7 +14,7 @@
                         <a class="nav-link active" aria-current="page" href="/lenvators">Арентодатели</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Квартиры</a>
+                        <a class="nav-link" href="/apartments">Квартиры</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/renters">Арендаторы</a>

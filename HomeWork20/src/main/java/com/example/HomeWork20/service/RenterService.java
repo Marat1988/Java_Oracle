@@ -17,7 +17,6 @@ public class RenterService {
     private final RenterRepository renterRepository;
 
     public List<Renter> rentorlist(){
-        List<Renter> renters = renterRepository.findAll();
         return renterRepository.findAll();
     }
 
