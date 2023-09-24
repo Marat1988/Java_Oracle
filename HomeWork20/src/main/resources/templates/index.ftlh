@@ -20,10 +20,16 @@
                         <a class="nav-link" href="/renters">Арендаторы</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/rents">Аренда</a>
+                        <a class="nav-link" href="/rents">Аренда квартир</a>
+                    </li>
+                    <li>
+                        <button type="button" class="btn-primary" onclick=getInformation()>
+                            Отобразить информацию (максимальная, минимальная средняя цена)</button>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+    <div id="information"></div>
+
 </@c.page>

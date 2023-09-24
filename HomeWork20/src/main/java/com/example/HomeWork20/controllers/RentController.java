@@ -1,6 +1,7 @@
 package com.example.HomeWork20.controllers;
 
 import com.example.HomeWork20.models.Apartment;
+import com.example.HomeWork20.models.Lenvator;
 import com.example.HomeWork20.models.Rent;
 import com.example.HomeWork20.models.Renter;
 import com.example.HomeWork20.service.ApartmentService;
@@ -73,8 +74,16 @@ public class RentController {
     }
 
     @PostMapping("/rent/create")
-    public String createRents(Rent rent) {
-        rentService.save(rent);
+    public String createApartment(@RequestParam("apartmentId") Integer apartmentId,
+                                  @RequestParam("renterId") Integer renterId,
+                                  Rent rent) {
+        Renter renter = renterService.findById(renterId);
+        Apartment apartment = apartmentService.findById(apartmentId);
+        if (renter != null && apartment != null) {
+            rent.setApartment(apartment);
+            rent.setRenter(renter);
+            rentService.save(rent);
+        }
         return "redirect:/rents";
     }
 

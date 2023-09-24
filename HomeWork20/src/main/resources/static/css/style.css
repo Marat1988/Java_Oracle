@@ -34,3 +34,7 @@
     top: 50%;
     transform: translateY(-25%);
 }
+#information{
+    font-size: 18px;
+    font-weight: bold;
+}

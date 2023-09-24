@@ -6,6 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.hibernate.engine.internal.Cascade;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 /*Таблицв аренд*/
@@ -19,8 +20,8 @@ public class Rent {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="id")
     private int id;
-    @Column(name="date_Time_Rent")
-    private LocalDateTime dateTimeRent; //Дата начала аренды
+    @Column(name="dateTimeRent")
+    private LocalDate dateTimeRent; //Дата начала аренды
     @ManyToOne(cascade = CascadeType.REFRESH,fetch = FetchType.EAGER)
     private Renter renter;
     @ManyToOne(cascade = CascadeType.REFRESH,fetch = FetchType.EAGER)
